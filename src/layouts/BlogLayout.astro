@@ -1,0 +1,80 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  recentPosts?: Array<{ slug: string; title: string }>;
+  categories?: Array<{ slug: string; name: string }>;
+  categoryName?: string;
+}
+
+const {
+  title = 'Blog - PostCart',
+  description = 'Stratégies e-commerce, récupération de paniers abandonnés et marketing postal pour booster vos ventes.',
+  recentPosts = [],
+  categories = [],
+  categoryName,
+} = Astro.props;
+---
+<BaseLayout title={title} description={description}>
+  <div class="pc-archive-header">
+    <div class="pc-container">
+      {categoryName ? (
+        <>
+          <h1>Catégorie : {categoryName}</h1>
+          <p>Tous les articles PostCart sur le thème « {categoryName} ».</p>
+        </>
+      ) : (
+        <>
+          <h1>Le Blog PostCart</h1>
+          <p>Stratégies e-commerce, récupération de paniers abandonnés et marketing postal pour booster vos ventes.</p>
+        </>
+      )}
+    </div>
+  </div>
+  <div class="pc-dotted-sep" aria-hidden="true"></div>
+
+  <div class="pc-container">
+    <div class="pc-blog-layout">
+      <main>
+        <slot />
+      </main>
+
+      <aside class="pc-sidebar">
+        {categories.length > 0 && (
+          <div class="pc-sidebar-widget">
+            <h3>Catégories</h3>
+            <ul>
+              {categories.map(cat => (
+                <li><a href={`/category/${cat.slug}/`}>{cat.name}</a></li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {recentPosts.length > 0 && (
+          <div class="pc-sidebar-widget">
+            <h3>Articles récents</h3>
+            <ul>
+              {recentPosts.map(post => (
+                <li><a href={`/blog/${post.slug}/`}>{post.title}</a></li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        <div class="pc-sidebar-widget">
+          <h3>À propos de PostCart</h3>
+          <p style="font-size: 0.9375rem; color: #525252; line-height: 1.6; margin-bottom: 1rem;">
+            PostCart envoie des cartes postales physiques pour récupérer vos paniers abandonnés Shopify. Taux d'ouverture 90%.
+          </p>
+          <a href="https://postcart.app/#install" class="pc-nav-cta" style="width: 100%; justify-content: center;">
+            Installer l'app
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</BaseLayout>

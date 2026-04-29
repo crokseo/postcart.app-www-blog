@@ -1,0 +1,87 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  category?: string;
+  categorySlug?: string;
+  date?: string;
+  readingTime?: string;
+  image?: string;
+  prev?: { slug: string; title: string };
+  next?: { slug: string; title: string };
+}
+
+const {
+  title,
+  description,
+  category,
+  categorySlug,
+  date,
+  readingTime,
+  image,
+  prev,
+  next,
+} = Astro.props;
+---
+<BaseLayout title={`${title} - PostCart`} description={description} ogType="article" ogImage={image}>
+  <div class="pc-container">
+    <div class="pc-single-header">
+      <div class="pc-single-meta">
+        {category && categorySlug && (
+          <>
+            <a href={`/category/${categorySlug}/`}>{category}</a>
+            <span>·</span>
+          </>
+        )}
+        {date && <span>{date}</span>}
+        {readingTime && (
+          <>
+            <span>·</span>
+            <span>{readingTime}</span>
+          </>
+        )}
+      </div>
+      <h1>{title}</h1>
+    </div>
+  </div>
+
+  {image && (
+    <div class="pc-container">
+      <div class="pc-single-hero-img">
+        <img src={image} alt={title} />
+      </div>
+    </div>
+  )}
+
+  <div class="pc-dotted-sep" aria-hidden="true"></div>
+
+  <div class="pc-container">
+    <div class="pc-article-content">
+      <slot />
+    </div>
+  </div>
+
+  {(prev || next) && (
+    <>
+      <div class="pc-dotted-sep" aria-hidden="true"></div>
+      <div class="pc-container">
+        <div class="pc-post-nav">
+          {prev ? (
+            <a href={`/blog/${prev.slug}/`} class="pc-post-nav-item">
+              <div class="pc-post-nav-label">← Précédent</div>
+              <div class="pc-post-nav-title">{prev.title}</div>
+            </a>
+          ) : <div />}
+          {next ? (
+            <a href={`/blog/${next.slug}/`} class="pc-post-nav-item pc-post-nav-item--next">
+              <div class="pc-post-nav-label">Suivant →</div>
+              <div class="pc-post-nav-title">{next.title}</div>
+            </a>
+          ) : <div />}
+        </div>
+      </div>
+    </>
+  )}
+</BaseLayout>

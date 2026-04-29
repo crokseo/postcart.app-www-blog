@@ -1,0 +1,83 @@
+---
+import { getCollection } from 'astro:content';
+import BlogLayout from '../../layouts/BlogLayout.astro';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog');
+
+  const categoriesMap = new Map<string, string>();
+  for (const post of allPosts) {
+    if (post.data.categorySlug && post.data.category) {
+      categoriesMap.set(post.data.categorySlug, post.data.category);
+    }
+  }
+
+  return Array.from(categoriesMap.entries()).map(([slug, name]) => ({
+    params: { slug },
+    props: {
+      categoryName: name,
+      posts: allPosts
+        .filter(p => p.data.categorySlug === slug)
+        .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()),
+    },
+  }));
+}
+
+const { slug } = Astro.params;
+const { categoryName, posts } = Astro.props;
+
+const allPosts = await getCollection('blog');
+
+const recentPosts = allPosts
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 5)
+  .map(p => ({ slug: p.id.replace(/\.md$/, ''), title: p.data.title }));
+
+const categoriesMap = new Map<string, string>();
+for (const post of allPosts) {
+  if (post.data.categorySlug && post.data.category) {
+    categoriesMap.set(post.data.categorySlug, post.data.category);
+  }
+}
+const categories = Array.from(categoriesMap.entries()).map(([s, name]) => ({ slug: s, name }));
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+}
+---
+<BlogLayout
+  title={`${categoryName} - Blog PostCart`}
+  description={`Tous les articles PostCart sur le thème "${categoryName}".`}
+  recentPosts={recentPosts}
+  categories={categories}
+  categoryName={categoryName}
+>
+  <div class="pc-post-list">
+    {posts.map(post => (
+      <article class="pc-post-card">
+        <a href={`/blog/${post.id.replace(/\.md$/, '')}/`}>
+          {post.data.image ? (
+            <img class="pc-post-card-thumb" src={post.data.image} alt={post.data.title} />
+          ) : (
+            <div class="pc-post-card-thumb" style="background: linear-gradient(135deg, rgba(254,113,0,0.08), rgba(254,113,0,0.02)); display: flex; align-items: center; justify-content: center;">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#fe7100" stroke-width="1" opacity="0.5"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+          )}
+          <div class="pc-post-card-body">
+            <div class="pc-post-card-meta">
+              <span class="pc-post-card-cat">{post.data.category}</span>
+              <span>{formatDate(post.data.date)}</span>
+              {post.data.readingTime && <span>{post.data.readingTime}</span>}
+            </div>
+            <h2>{post.data.title}</h2>
+            <p class="pc-post-card-excerpt">{post.data.description}</p>
+            <span class="pc-post-card-read">
+              Lire l'article
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+            </span>
+          </div>
+        </a>
+      </article>
+    ))}
+  </div>
+</BlogLayout>
