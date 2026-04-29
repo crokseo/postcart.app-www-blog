@@ -3,6 +3,7 @@ name: Deploy blog to postcart.app
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
