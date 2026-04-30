@@ -9,6 +9,7 @@ interface Props {
   date?: string;
   readingTime?: string;
   image?: string;
+  imageAlign?: 'left' | 'center' | 'right';
   prev?: { slug: string; title: string };
   next?: { slug: string; title: string };
 }
@@ -21,6 +22,7 @@ const {
   date,
   readingTime,
   image,
+  imageAlign = 'center',
   prev,
   next,
 } = Astro.props;
@@ -49,7 +51,7 @@ const {
 
   {image && (
     <div class="pc-container">
-      <div class="pc-single-hero-img">
+      <div class={`pc-single-hero-img${imageAlign !== 'center' ? ` pc-single-hero-img--${imageAlign}` : ''}`}>
         <img src={image} alt={title} />
       </div>
     </div>

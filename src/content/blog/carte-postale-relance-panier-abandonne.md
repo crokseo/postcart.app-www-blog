@@ -5,6 +5,7 @@ date: 2026-04-29
 category: "Canaux de relance"
 categorySlug: "canaux-de-relance"
 image: "/images/carte-postale-relance-panier-abandonne-hero.svg"
+imageAlign: right
 readingTime: "12 min de lecture"
 # ──────────────────────────────────────────────────
 # SEO METADATA — référence interne (hors schéma Astro)

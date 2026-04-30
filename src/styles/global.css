@@ -292,6 +292,8 @@ img { max-width: 100%; height: auto; }
     border: 1px solid #e5e5e5;
 }
 .pc-single-hero-img img { width: 100%; height: auto; display: block; }
+.pc-single-hero-img--right { margin-left: auto; margin-right: 0; }
+.pc-single-hero-img--left { margin-left: 0; margin-right: auto; }
 
 /* ===== ARTICLE CONTENT ===== */
 .pc-article-content {

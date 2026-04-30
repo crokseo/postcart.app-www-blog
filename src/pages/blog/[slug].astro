@@ -31,6 +31,7 @@ function formatDate(date: Date): string {
   date={formatDate(post.data.date)}
   readingTime={post.data.readingTime}
   image={post.data.image}
+  imageAlign={post.data.imageAlign}
   prev={prev ? { slug: prev.id.replace(/\.md$/, ''), title: prev.data.title } : undefined}
   next={next ? { slug: next.id.replace(/\.md$/, ''), title: next.data.title } : undefined}
 >
