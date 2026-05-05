@@ -32,6 +32,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/blog/
           server-dir: ./postcart.app_www/blog/
+          dangerous-clean-slate: true
 
       - name: Deploy /category via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -41,6 +42,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/category/
           server-dir: ./postcart.app_www/category/
+          dangerous-clean-slate: true
 
       - name: Deploy /_astro assets via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -50,3 +52,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/_astro/
           server-dir: ./postcart.app_www/_astro/
+          dangerous-clean-slate: true
