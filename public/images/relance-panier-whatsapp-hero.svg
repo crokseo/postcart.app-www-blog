@@ -1,0 +1,301 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="55%" style="stop-color:#0d1f35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#060e1a;stop-opacity:1" />
+    </linearGradient>
+    <!-- WhatsApp green gradient -->
+    <linearGradient id="waGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#25D366;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#128C7E;stop-opacity:1" />
+    </linearGradient>
+    <!-- Postcart violet gradient -->
+    <linearGradient id="pcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6c63ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:1" />
+    </linearGradient>
+    <!-- Card dark gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:0.97" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:0.97" />
+    </linearGradient>
+    <!-- Phone body gradient -->
+    <linearGradient id="phoneBodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2540;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a1020;stop-opacity:1" />
+    </linearGradient>
+    <!-- WA chat bg gradient -->
+    <linearGradient id="chatBgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0b1623;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#060e1a;stop-opacity:1" />
+    </linearGradient>
+    <!-- Red alert gradient -->
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f87171;stop-opacity:1" />
+    </linearGradient>
+    <!-- Filters -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowViolet">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="16" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glowGreen">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ── BACKGROUND ── -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Subtle dot grid -->
+  <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+    <circle cx="14" cy="14" r="0.9" fill="#334155" opacity="0.28"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- WA green ambient glow — top-left -->
+  <ellipse cx="140" cy="170" rx="200" ry="160" fill="#25D366" opacity="0.05"/>
+  <!-- Postcart violet ambient glow — top-right -->
+  <ellipse cx="1070" cy="200" rx="180" ry="150" fill="#6c63ff" opacity="0.07"/>
+
+  <!-- Accent line top — split WA green left / postcart violet right -->
+  <rect x="0" y="0" width="600" height="3" fill="url(#waGrad)"/>
+  <rect x="600" y="0" width="600" height="3" fill="url(#pcGrad)"/>
+
+  <!-- ── LEFT SECTION : titre + cartes stats WhatsApp ── -->
+
+  <!-- Main title -->
+  <text x="68" y="108" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="36" fill="#f8fafc" letter-spacing="-0.8">Relance panier</text>
+  <text x="68" y="152" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="36" fill="#25D366" letter-spacing="-0.8" filter="url(#glowGreen)">WhatsApp</text>
+  <text x="68" y="196" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="36" fill="#f8fafc" letter-spacing="-0.8">Shopify</text>
+
+  <!-- Subtitle -->
+  <text x="68" y="228" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-weight="400" font-size="15" fill="#94a3b8">Le 98% d'ouverture qui cache une réalité plus complexe</text>
+
+  <!-- Separator -->
+  <rect x="68" y="246" width="56" height="3" rx="2" fill="url(#waGrad)"/>
+
+  <!-- ── STAT CARD 1 : 98% ouverture (avec nuance) ── -->
+  <g filter="url(#cardShadow)">
+    <rect x="68" y="268" width="252" height="108" rx="12" fill="url(#cardGrad)" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <!-- left accent green -->
+  <rect x="68" y="268" width="4" height="108" rx="2" fill="url(#waGrad)"/>
+  <text x="88" y="296" font-family="'Inter',Arial,sans-serif" font-weight="700" font-size="11" fill="#64748b" letter-spacing="0.6">TAUX D'OUVERTURE AFFICHÉ</text>
+  <text x="88" y="338" font-family="'Inter',Arial,sans-serif" font-weight="900" font-size="44" fill="#25D366" filter="url(#glowGreen)">98%</text>
+  <text x="88" y="358" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#64748b">messages perso entre particuliers</text>
+  <text x="88" y="371" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#ef4444">≠ marketing sortant</text>
+
+  <!-- ── STAT CARD 2 : opt-in réel France ── -->
+  <g filter="url(#cardShadow)">
+    <rect x="68" y="392" width="252" height="108" rx="12" fill="url(#cardGrad)" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <rect x="68" y="392" width="4" height="108" rx="2" fill="url(#redGrad)"/>
+  <text x="88" y="420" font-family="'Inter',Arial,sans-serif" font-weight="700" font-size="11" fill="#64748b" letter-spacing="0.6">OPT-IN WHATSAPP EN FRANCE</text>
+  <text x="88" y="462" font-family="'Inter',Arial,sans-serif" font-weight="900" font-size="44" fill="#ef4444">&lt; 5%</text>
+  <text x="88" y="482" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#64748b">de vos clients e-commerce</text>
+  <text x="88" y="495" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#94a3b8">vs 60–80% opt-in email</text>
+
+  <!-- ── STAT CARD 3 : coût API ── -->
+  <g filter="url(#cardShadow)">
+    <rect x="68" y="516" width="252" height="82" rx="12" fill="url(#cardGrad)" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <rect x="68" y="516" width="4" height="82" rx="2" fill="#f59e0b"/>
+  <text x="88" y="542" font-family="'Inter',Arial,sans-serif" font-weight="700" font-size="11" fill="#64748b" letter-spacing="0.6">COÛT API — CONVERSATION MARKETING</text>
+  <text x="88" y="576" font-family="'Inter',Arial,sans-serif" font-weight="800" font-size="28" fill="#f59e0b">0,04–0,10 €</text>
+  <text x="88" y="591" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#64748b">+ setup BSP 100–500 € + abonnement mensuel</text>
+
+  <!-- ── CENTRE : WhatsApp phone mockup ── -->
+
+  <!-- Phone outer -->
+  <g filter="url(#softShadow)">
+    <rect x="390" y="44" width="210" height="420" rx="30" fill="url(#phoneBodyGrad)" stroke="#253350" stroke-width="2"/>
+  </g>
+
+  <!-- Dynamic island -->
+  <rect x="456" y="58" width="78" height="20" rx="10" fill="#060e1a"/>
+  <circle cx="502" cy="68" r="5.5" fill="#0b1623"/>
+
+  <!-- Phone screen -->
+  <rect x="398" y="88" width="194" height="366" rx="6" fill="url(#chatBgGrad)"/>
+
+  <!-- WA chat header -->
+  <rect x="398" y="88" width="194" height="48" rx="0" fill="#128C7E"/>
+  <!-- WA back arrow -->
+  <text x="408" y="116" font-family="'Inter',Arial,sans-serif" font-size="14" fill="#ffffff" opacity="0.8">‹</text>
+  <!-- Avatar -->
+  <circle cx="432" cy="112" r="14" fill="#075E54"/>
+  <text x="432" y="117" text-anchor="middle" font-family="'Inter',Arial,sans-serif" font-size="11" font-weight="700" fill="#25D366">ML</text>
+  <!-- Contact info -->
+  <text x="452" y="107" font-family="'Inter',Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">Maison Lune</text>
+  <text x="452" y="120" font-family="'Inter',Arial,sans-serif" font-size="8.5" fill="#b2dfdb">Entreprise · WhatsApp Business</text>
+  <!-- Call/Video icons -->
+  <text x="557" y="116" font-family="'Inter',Arial,sans-serif" font-size="13" fill="#ffffff" opacity="0.8">📞</text>
+
+  <!-- Chat messages area -->
+  <!-- System notice -->
+  <rect x="418" y="148" width="154" height="20" rx="4" fill="#1e3a2e" opacity="0.8"/>
+  <text x="495" y="161" text-anchor="middle" font-family="'Inter',Arial,sans-serif" font-size="8" fill="#4ade80">Messages chiffrés de bout en bout</text>
+
+  <!-- Business message bubble -->
+  <g filter="url(#cardShadow)">
+    <rect x="406" y="178" width="158" height="84" rx="12" fill="#1f2c34"/>
+    <polygon points="406,196 394,200 406,204" fill="#1f2c34"/>
+  </g>
+  <!-- Template label -->
+  <rect x="414" y="186" width="80" height="14" rx="3" fill="#25D366" opacity="0.2"/>
+  <text x="418" y="196" font-family="'Inter',Arial,sans-serif" font-size="7.5" fill="#25D366" font-weight="600">TEMPLATE APPROUVÉ META</text>
+  <text x="414" y="214" font-family="'Inter',Arial,sans-serif" font-size="9" fill="#d1d5db" font-weight="600">Maison Lune :</text>
+  <text x="414" y="228" font-family="'Inter',Arial,sans-serif" font-size="8.5" fill="#94a3b8">Votre panier vous attend.</text>
+  <text x="414" y="242" font-family="'Inter',Arial,sans-serif" font-size="8.5" fill="#94a3b8">Bougie Santal 290g — 38 €</text>
+  <text x="414" y="255" font-family="'Inter',Arial,sans-serif" font-size="8" fill="#475569">Revenir au panier →</text>
+
+  <!-- Time stamp -->
+  <text x="546" y="270" text-anchor="end" font-family="'Inter',Arial,sans-serif" font-size="7.5" fill="#475569">14:23 ✓✓</text>
+
+  <!-- Spam warning badge -->
+  <g filter="url(#cardShadow)">
+    <rect x="406" y="282" width="178" height="34" rx="8" fill="#1a0808" stroke="#ef4444" stroke-width="1"/>
+  </g>
+  <text x="418" y="298" font-family="'Inter',Arial,sans-serif" font-size="8.5" font-weight="700" fill="#ef4444">⚠ Signalé comme indésirable</text>
+  <text x="418" y="310" font-family="'Inter',Arial,sans-serif" font-size="7.5" fill="#94a3b8">1 signalement = revue du compte</text>
+
+  <!-- Opt-out message -->
+  <g filter="url(#cardShadow)">
+    <rect x="406" y="326" width="158" height="26" rx="8" fill="#1f2c34"/>
+  </g>
+  <text x="418" y="342" font-family="'Inter',Arial,sans-serif" font-size="8.5" fill="#94a3b8">Se désabonner des messages →</text>
+
+  <!-- Lock icon bottom chat -->
+  <rect x="398" y="430" width="194" height="24" rx="0" fill="#0b1420"/>
+  <text x="495" y="446" text-anchor="middle" font-family="'Inter',Arial,sans-serif" font-size="8.5" fill="#4ade80" opacity="0.6">🔒 double opt-in requis</text>
+
+  <!-- Phone home bar -->
+  <rect x="455" y="460" width="80" height="4" rx="2" fill="#253350"/>
+
+  <!-- ── WA LOGO entre phone et section droite ── -->
+  <!-- WA icon circle large — watermark -->
+  <circle cx="495" cy="540" r="28" fill="#25D366" opacity="0.08"/>
+  <circle cx="495" cy="540" r="18" fill="#25D366" opacity="0.12"/>
+
+  <!-- ── RIGHT SECTION : Contraintes + comparaison postcart ── -->
+
+  <!-- Section header -->
+  <text x="636" y="82" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="13" fill="#64748b" letter-spacing="1">BARRIÈRES D'ENTRÉE RÉELLES</text>
+
+  <!-- Constraint block 1 : Compte Meta Business -->
+  <g filter="url(#cardShadow)">
+    <rect x="636" y="96" width="488" height="68" rx="10" fill="url(#cardGrad)" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <circle cx="668" cy="130" r="18" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="668" y="135" text-anchor="middle" font-family="'Inter',Arial,sans-serif" font-size="13" fill="#f59e0b">⏳</text>
+  <text x="696" y="118" font-family="'Inter',Arial,sans-serif" font-weight="700" font-size="12" fill="#f1f5f9">Compte Meta Business vérifié</text>
+  <text x="696" y="134" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#94a3b8">Validation 1 à 4 semaines · partenaire BSP obligatoire</text>
+  <text x="696" y="149" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#94a3b8">Twilio, MessageBird, 360dialog · numéro dédié</text>
+
+  <!-- Constraint block 2 : Templates approuvés -->
+  <g filter="url(#cardShadow)">
+    <rect x="636" y="178" width="488" height="68" rx="10" fill="url(#cardGrad)" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <circle cx="668" cy="212" r="18" fill="#0f172a" stroke="#25D366" stroke-width="1.5"/>
+  <text x="668" y="217" text-anchor="middle" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#25D366">📋</text>
+  <text x="696" y="200" font-family="'Inter',Arial,sans-serif" font-weight="700" font-size="12" fill="#f1f5f9">Templates pré-approuvés par Meta</text>
+  <text x="696" y="216" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#94a3b8">Délai 24–72h · contenu limité · pas de promo agressive</text>
+  <text x="696" y="231" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#94a3b8">Aucune solution self-service Shopify FR en 2026</text>
+
+  <!-- Constraint block 3 : Opt-out et blocage -->
+  <g filter="url(#cardShadow)">
+    <rect x="636" y="260" width="488" height="68" rx="10" fill="url(#cardGrad)" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <circle cx="668" cy="294" r="18" fill="#0f172a" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="668" y="299" text-anchor="middle" font-family="'Inter',Arial,sans-serif" font-size="14" fill="#ef4444">!</text>
+  <text x="696" y="282" font-family="'Inter',Arial,sans-serif" font-weight="700" font-size="12" fill="#f1f5f9">Opt-out élevé · risque de suspension</text>
+  <text x="696" y="298" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#94a3b8">72% des Français : WhatsApp = espace privé (YouGov 2024)</text>
+  <text x="696" y="313" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#ef4444">1 signalement → revue Meta → blocage compte possible</text>
+
+  <!-- ── VERSUS divider ── -->
+  <rect x="636" y="344" width="488" height="1" fill="#1e3a5f"/>
+  <rect x="836" y="336" width="48" height="18" rx="9" fill="#0f172a"/>
+  <text x="860" y="348" text-anchor="middle" font-family="'Inter',Arial,sans-serif" font-size="10" font-weight="700" fill="#64748b">VS</text>
+
+  <!-- ── Postcart advantage block ── -->
+  <g filter="url(#cardShadow)">
+    <rect x="636" y="358" width="488" height="120" rx="12" fill="#0d1225" stroke="#6c63ff" stroke-width="1.5"/>
+  </g>
+  <rect x="636" y="358" width="4" height="120" rx="2" fill="url(#pcGrad)"/>
+
+  <!-- Postcart label -->
+  <text x="655" y="382" font-family="'Inter',Arial,sans-serif" font-weight="700" font-size="12" fill="#a78bfa" letter-spacing="0.4">CARTE POSTALE postcart — ALTERNATIVE IMMÉDIATE</text>
+
+  <!-- Comparison items -->
+  <!-- Coverage -->
+  <text x="655" y="404" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#94a3b8">Couverture :</text>
+  <text x="730" y="404" font-family="'Inter',Arial,sans-serif" font-size="11" font-weight="700" fill="#a78bfa" filter="url(#glowViolet)">100% des clients</text>
+  <text x="818" y="404" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#64748b">avec adresse de livraison</text>
+  <text x="975" y="404" font-family="'Inter',Arial,sans-serif" font-size="10" fill="#4ade80">vs &lt;5% WhatsApp</text>
+
+  <!-- Consent -->
+  <text x="655" y="422" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#94a3b8">Consentement :</text>
+  <text x="742" y="422" font-family="'Inter',Arial,sans-serif" font-size="11" font-weight="700" fill="#a78bfa">Intérêt légitime RGPD</text>
+  <text x="855" y="422" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#64748b">— pas d'opt-in supplémentaire</text>
+
+  <!-- Open rate -->
+  <text x="655" y="440" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#94a3b8">Ouverture réelle :</text>
+  <text x="748" y="440" font-family="'Inter',Arial,sans-serif" font-size="11" font-weight="700" fill="#a78bfa" filter="url(#glowViolet)">91%</text>
+  <text x="773" y="440" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#64748b">(courrier physique, source DMA) · 17 jours de dwell time</text>
+
+  <!-- Setup -->
+  <text x="655" y="458" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#94a3b8">Mise en place :</text>
+  <text x="740" y="458" font-family="'Inter',Arial,sans-serif" font-size="11" font-weight="700" fill="#4ade80">10 minutes</text>
+  <text x="808" y="458" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#64748b">· connecteur Shopify natif · dès 15 cartes</text>
+
+  <!-- Risk -->
+  <text x="655" y="470" font-family="'Inter',Arial,sans-serif" font-size="9.5" fill="#475569">Aucun risque de blocage · pas de BSP · pas de Meta</text>
+
+  <!-- ── CTA badge bottom-right ── -->
+  <g filter="url(#cardShadow)">
+    <rect x="636" y="492" width="488" height="56" rx="10" fill="#0d0a1f" stroke="#6c63ff" stroke-width="1.5"/>
+  </g>
+  <rect x="636" y="492" width="4" height="56" rx="2" fill="url(#pcGrad)"/>
+  <text x="655" y="516" font-family="'Inter',Arial,sans-serif" font-weight="800" font-size="13" fill="#f8fafc">En attendant WhatsApp Business API —</text>
+  <text x="655" y="534" font-family="'Inter',Arial,sans-serif" font-weight="700" font-size="12" fill="#a78bfa">testez postcart gratuitement · 15 cartes offertes</text>
+  <rect x="984" y="498" width="120" height="36" rx="8" fill="url(#pcGrad)" filter="url(#glowViolet)"/>
+  <text x="1044" y="520" text-anchor="middle" font-family="'Inter',Arial,sans-serif" font-size="11" font-weight="700" fill="#ffffff">Tester →</text>
+  <text x="1044" y="534" text-anchor="middle" font-family="'Inter',Arial,sans-serif" font-size="9" fill="#e0d9ff">postcart.app</text>
+
+  <!-- ── BOTTOM BAR : branding ── -->
+  <rect x="0" y="592" width="1200" height="38" fill="#070c18" opacity="0.97"/>
+
+  <!-- WA green left accent -->
+  <rect x="0" y="592" width="3" height="38" fill="url(#waGrad)"/>
+
+  <!-- postcart.app logo -->
+  <circle cx="36" cy="611" r="13" fill="#6c63ff" opacity="0.15"/>
+  <circle cx="36" cy="611" r="8.5" fill="#6c63ff"/>
+  <text x="36" y="615" text-anchor="middle" font-family="'Inter',Arial,sans-serif" font-size="9" font-weight="800" fill="#ffffff">p</text>
+  <text x="54" y="608" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="13" fill="#f8fafc">postcart</text>
+  <text x="113" y="608" font-family="'Inter',Arial,sans-serif" font-size="13" fill="#6c63ff">.app</text>
+  <text x="54" y="622" font-family="'Inter',Arial,sans-serif" font-size="9.5" fill="#475569">Relance panier par carte postale — sans consentement digital</text>
+
+  <!-- Center tagline -->
+  <text x="600" y="615" text-anchor="middle" font-family="'Inter',Arial,sans-serif" font-size="10" fill="#334155">Blog · Canaux de relance · Page 2.7</text>
+
+  <!-- Right badge WA vs Carte postale -->
+  <rect x="996" y="596" width="186" height="26" rx="5" fill="#25D366" opacity="0.1" stroke="#25D366" stroke-width="0.8" opacity="0.4"/>
+  <text x="1089" y="613" text-anchor="middle" font-family="'Inter',Arial,sans-serif" font-size="10" font-weight="600" fill="#25D366">WhatsApp</text>
+  <text x="1156" y="613" text-anchor="middle" font-family="'Inter',Arial,sans-serif" font-size="10" fill="#64748b">vs carte postale</text>
+
+</svg>

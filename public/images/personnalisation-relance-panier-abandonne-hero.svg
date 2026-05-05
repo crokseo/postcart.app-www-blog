@@ -1,0 +1,230 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glowOrange">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="cardShadow">
+      <feDropShadow dx="2" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Subtle dot grid -->
+  <pattern id="dotgrid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <circle cx="16" cy="16" r="1" fill="#334155" opacity="0.5"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dotgrid)"/>
+
+  <!-- Orange accent glow top-right -->
+  <ellipse cx="1050" cy="80" rx="220" ry="120" fill="#f59e0b" opacity="0.06"/>
+
+  <!-- ── LEFT COLUMN : title + stats ── -->
+
+  <!-- Eyebrow label -->
+  <rect x="60" y="72" width="220" height="26" rx="13" fill="#f59e0b" opacity="0.12"/>
+  <rect x="60" y="72" width="220" height="26" rx="13" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.35"/>
+  <text x="170" y="90" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#f59e0b" letter-spacing="2">SEGMENTATION &amp; PERSONNALISATION</text>
+
+  <!-- Main heading -->
+  <text x="60" y="160" font-family="'Segoe UI', Georgia, serif" font-size="48" font-weight="800" fill="#f8fafc" letter-spacing="-1">Relance panier :</text>
+  <text x="60" y="218" font-family="'Segoe UI', Georgia, serif" font-size="48" font-weight="800" fill="#f59e0b" letter-spacing="-1">personnalisée</text>
+  <text x="60" y="268" font-family="'Segoe UI', Georgia, serif" font-size="36" font-weight="400" fill="#94a3b8">qui convertit.</text>
+
+  <!-- Subline -->
+  <text x="60" y="318" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#64748b">3 segments, 2 profils, 1 canal physique — la méthode data.</text>
+
+  <!-- Divider line -->
+  <line x1="60" y1="346" x2="300" y2="346" stroke="#f59e0b" stroke-width="2" opacity="0.5"/>
+
+  <!-- Stats row -->
+  <!-- Stat 1: +22% -->
+  <g transform="translate(60, 368)">
+    <rect x="0" y="0" width="120" height="72" rx="12" fill="#f59e0b" opacity="0.10"/>
+    <rect x="0" y="0" width="120" height="72" rx="12" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.4"/>
+    <text x="60" y="34" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="800" fill="#f59e0b">+22%</text>
+    <text x="60" y="54" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#94a3b8">taux d'ouverture</text>
+    <text x="60" y="66" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#64748b">prénom dans l'objet</text>
+  </g>
+
+  <!-- Stat 2: +35% -->
+  <g transform="translate(196, 368)">
+    <rect x="0" y="0" width="120" height="72" rx="12" fill="#f59e0b" opacity="0.10"/>
+    <rect x="0" y="0" width="120" height="72" rx="12" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.4"/>
+    <text x="60" y="34" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="800" fill="#fbbf24">+35%</text>
+    <text x="60" y="54" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#94a3b8">taux de clic</text>
+    <text x="60" y="66" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#64748b">produit personnalisé</text>
+  </g>
+
+  <!-- Stat 3: 3 segments -->
+  <g transform="translate(60, 458)">
+    <rect x="0" y="0" width="120" height="72" rx="12" fill="#f59e0b" opacity="0.10"/>
+    <rect x="0" y="0" width="120" height="72" rx="12" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.4"/>
+    <text x="60" y="34" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="800" fill="#fcd34d">3</text>
+    <text x="60" y="54" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#94a3b8">segments valeur</text>
+    <text x="60" y="66" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#64748b">&lt;60€ / 60–150€ / &gt;150€</text>
+  </g>
+
+  <!-- Stat 4: 80€ seuil -->
+  <g transform="translate(196, 458)">
+    <rect x="0" y="0" width="120" height="72" rx="12" fill="#f59e0b" opacity="0.10"/>
+    <rect x="0" y="0" width="120" height="72" rx="12" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.4"/>
+    <text x="60" y="34" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="800" fill="#f59e0b">80€+</text>
+    <text x="60" y="54" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#94a3b8">seuil carte postale</text>
+    <text x="60" y="66" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#64748b">canal physique rentable</text>
+  </g>
+
+  <!-- Branding postcart.app bottom left -->
+  <circle cx="75" cy="590" r="14" fill="#f59e0b" opacity="0.18"/>
+  <circle cx="75" cy="590" r="14" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.5"/>
+  <text x="75" y="594" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="800" fill="#f59e0b">P</text>
+  <text x="98" y="594" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" fill="#64748b">postcart.app</text>
+
+  <!-- ── RIGHT COLUMN : segment grid ── -->
+
+  <!-- Grid container background -->
+  <rect x="380" y="48" width="792" height="540" rx="20" fill="#0f172a" opacity="0.7" filter="url(#softShadow)"/>
+  <rect x="380" y="48" width="792" height="540" rx="20" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Grid title -->
+  <text x="776" y="92" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#475569" letter-spacing="2">MATRICE DE SEGMENTATION</text>
+
+  <!-- ──── ROW 1 : Value segments ──── -->
+  <!-- Segment A : <60€ -->
+  <rect x="400" y="108" width="228" height="140" rx="14" fill="url(#cardGrad1)" filter="url(#cardShadow)"/>
+  <rect x="400" y="108" width="228" height="140" rx="14" fill="none" stroke="#334155" stroke-width="1"/>
+  <!-- top bar -->
+  <rect x="400" y="108" width="228" height="4" rx="2" fill="#64748b"/>
+  <!-- icon: wallet small -->
+  <circle cx="424" cy="138" r="14" fill="#1e293b"/>
+  <text x="424" y="143" text-anchor="middle" font-family="Arial" font-size="15" fill="#64748b">€</text>
+  <text x="450" y="134" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#94a3b8">Panier &lt; 60€</text>
+  <text x="450" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#475569">Segment bas</text>
+  <line x1="414" y1="162" x2="614" y2="162" stroke="#1e293b" stroke-width="1"/>
+  <text x="414" y="180" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#64748b">Canal : Email + SMS</text>
+  <text x="414" y="196" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#64748b">Message : urgence + promo</text>
+  <text x="414" y="212" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#475569" font-style="italic">Code -10% limité 48h</text>
+  <text x="414" y="232" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" fill="#64748b">Pas de carte postale</text>
+
+  <!-- Segment B : 60-150€ -->
+  <rect x="646" y="108" width="228" height="140" rx="14" fill="url(#cardGrad1)" filter="url(#cardShadow)"/>
+  <rect x="646" y="108" width="228" height="140" rx="14" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+  <!-- top bar orange -->
+  <rect x="646" y="108" width="228" height="4" rx="2" fill="url(#orangeGrad)"/>
+  <circle cx="670" cy="138" r="14" fill="#1e293b"/>
+  <text x="670" y="143" text-anchor="middle" font-family="Arial" font-size="13" fill="#f59e0b">★</text>
+  <text x="696" y="134" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#f8fafc">60€ — 150€</text>
+  <text x="696" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#f59e0b">Segment cœur</text>
+  <line x1="660" y1="162" x2="860" y2="162" stroke="#292d3e" stroke-width="1"/>
+  <text x="660" y="180" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#94a3b8">Canal : Email + Carte postale</text>
+  <text x="660" y="196" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#94a3b8">Message : valeur + confiance</text>
+  <text x="660" y="212" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#64748b" font-style="italic">Votre panier vous attend</text>
+  <text x="660" y="232" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" fill="#f59e0b">Carte postale J+6</text>
+
+  <!-- Segment C : >150€ -->
+  <rect x="892" y="108" width="264" height="140" rx="14" fill="url(#cardGrad1)" filter="url(#cardShadow)"/>
+  <rect x="892" y="108" width="264" height="140" rx="14" fill="none" stroke="#fbbf24" stroke-width="2"/>
+  <!-- top bar gold -->
+  <rect x="892" y="108" width="264" height="4" rx="2" fill="#fbbf24"/>
+  <circle cx="918" cy="138" r="14" fill="#1e293b"/>
+  <text x="918" y="143" text-anchor="middle" font-family="Arial" font-size="13" fill="#fbbf24">◆</text>
+  <text x="944" y="134" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#fbbf24">Panier &gt; 150€</text>
+  <text x="944" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#fbbf24">Segment premium</text>
+  <line x1="906" y1="162" x2="1142" y2="162" stroke="#292d3e" stroke-width="1"/>
+  <text x="906" y="180" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#94a3b8">Canal : Email + Carte + VDP</text>
+  <text x="906" y="196" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#94a3b8">Message : exclusivité + service</text>
+  <text x="906" y="212" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#64748b" font-style="italic">Accès prioritaire, retour offert</text>
+  <text x="906" y="232" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" fill="#fbbf24">Carte VDP prénom + produit</text>
+
+  <!-- ──── ROW 2 : Profil client ──── -->
+  <!-- Card: 1er achat -->
+  <rect x="400" y="268" width="360" height="140" rx="14" fill="url(#cardGrad1)" filter="url(#cardShadow)"/>
+  <rect x="400" y="268" width="360" height="140" rx="14" fill="none" stroke="#334155" stroke-width="1"/>
+  <rect x="400" y="268" width="360" height="4" rx="2" fill="#38bdf8"/>
+  <circle cx="428" cy="296" r="14" fill="#1e293b"/>
+  <text x="428" y="301" text-anchor="middle" font-family="Arial" font-size="13" fill="#38bdf8">◎</text>
+  <text x="452" y="292" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#94a3b8">Nouveau client</text>
+  <text x="452" y="308" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#38bdf8">1er achat — Besoin de réassurance</text>
+  <line x1="414" y1="320" x2="746" y2="320" stroke="#1e293b" stroke-width="1"/>
+  <text x="414" y="338" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#64748b">→ Avis clients, politique retour visible</text>
+  <text x="414" y="356" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#64748b">→ Garantie satisfait ou remboursé</text>
+  <text x="414" y="374" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#64748b">→ Message : "Bienvenue, on vous aide"</text>
+  <text x="414" y="394" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" fill="#38bdf8">Tunnel simplifié — 1 étape</text>
+
+  <!-- Card: Client fidèle -->
+  <rect x="776" y="268" width="380" height="140" rx="14" fill="url(#cardGrad1)" filter="url(#cardShadow)"/>
+  <rect x="776" y="268" width="380" height="140" rx="14" fill="none" stroke="#a78bfa" stroke-width="1"/>
+  <rect x="776" y="268" width="380" height="4" rx="2" fill="#a78bfa"/>
+  <circle cx="804" cy="296" r="14" fill="#1e293b"/>
+  <text x="804" y="301" text-anchor="middle" font-family="Arial" font-size="13" fill="#a78bfa">♛</text>
+  <text x="828" y="292" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#94a3b8">Client fidèle</text>
+  <text x="828" y="308" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#a78bfa">2+ achats — Répond à l'exclusivité</text>
+  <line x1="790" y1="320" x2="1142" y2="320" stroke="#1e293b" stroke-width="1"/>
+  <text x="790" y="338" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#64748b">→ Accès prioritaire avant vente</text>
+  <text x="790" y="356" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#64748b">→ Livraison offerte ou points bonus</text>
+  <text x="790" y="374" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#64748b">→ Message : "Réservé à nos meilleurs"</text>
+  <text x="790" y="394" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" fill="#a78bfa">Pas de code promo — valorisation</text>
+
+  <!-- ──── ROW 3 : Device + Catégorie ──── -->
+  <!-- Device Mobile -->
+  <rect x="400" y="428" width="280" height="145" rx="14" fill="url(#cardGrad1)" filter="url(#cardShadow)"/>
+  <rect x="400" y="428" width="280" height="145" rx="14" fill="none" stroke="#334155" stroke-width="1"/>
+  <rect x="400" y="428" width="280" height="4" rx="2" fill="#34d399"/>
+  <text x="414" y="456" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#94a3b8">📱 Abandon Mobile</text>
+  <text x="414" y="474" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#34d399">Conversion 3x plus faible</text>
+  <line x1="414" y1="484" x2="666" y2="484" stroke="#1e293b" stroke-width="1"/>
+  <text x="414" y="502" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#64748b">→ Canal découverte/inspiration</text>
+  <text x="414" y="518" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#64748b">→ Orienter vers 1-click / Apple Pay</text>
+  <text x="414" y="534" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#64748b">→ Email court + bouton unique</text>
+  <text x="414" y="556" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" fill="#34d399">Réduire les frictions d'achat</text>
+
+  <!-- Device Desktop -->
+  <rect x="696" y="428" width="280" height="145" rx="14" fill="url(#cardGrad1)" filter="url(#cardShadow)"/>
+  <rect x="696" y="428" width="280" height="145" rx="14" fill="none" stroke="#334155" stroke-width="1"/>
+  <rect x="696" y="428" width="280" height="4" rx="2" fill="#f59e0b"/>
+  <text x="710" y="456" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#94a3b8">🖥 Abandon Desktop</text>
+  <text x="710" y="474" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#f59e0b">Canal de l'achat réfléchi</text>
+  <line x1="710" y1="484" x2="962" y2="484" stroke="#1e293b" stroke-width="1"/>
+  <text x="710" y="502" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#64748b">→ Séquence email complète 1-2-3</text>
+  <text x="710" y="518" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#64748b">→ Argumentaire long + specs</text>
+  <text x="710" y="534" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#64748b">→ Carte postale si &gt; 80€</text>
+  <text x="710" y="556" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" fill="#f59e0b">Taux de conversion optimal</text>
+
+  <!-- Catégorie produit -->
+  <rect x="992" y="428" width="164" height="145" rx="14" fill="url(#cardGrad1)" filter="url(#cardShadow)"/>
+  <rect x="992" y="428" width="164" height="145" rx="14" fill="none" stroke="#334155" stroke-width="1"/>
+  <rect x="992" y="428" width="164" height="4" rx="2" fill="#f472b6"/>
+  <text x="1006" y="456" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#94a3b8">Catégorie</text>
+  <line x1="1006" y1="464" x2="1142" y2="464" stroke="#1e293b" stroke-width="1"/>
+  <text x="1006" y="482" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#64748b">Mode/Beauté</text>
+  <text x="1130" y="482" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#f472b6">Visuel</text>
+  <text x="1006" y="500" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#64748b">Électronique</text>
+  <text x="1130" y="500" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#f472b6">Specs</text>
+  <text x="1006" y="518" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#64748b">Alimentation</text>
+  <text x="1130" y="518" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#f472b6">Occasion</text>
+  <text x="1006" y="556" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" fill="#f472b6">Adapter le visuel</text>
+
+  <!-- ── Vertical separator inside grid ── (decorative) -->
+  <!-- already delimited by cards -->
+
+</svg>

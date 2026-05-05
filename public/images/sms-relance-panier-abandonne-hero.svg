@@ -1,0 +1,237 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#0f1f3d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#071527;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="phoneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2540;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111827;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bubbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="statCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:0.95" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="glowGreen">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Subtle dot grid -->
+  <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="15" cy="15" r="1" fill="#334155" opacity="0.3"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- Green ambient glow top-left -->
+  <ellipse cx="180" cy="200" rx="220" ry="180" fill="#10b981" opacity="0.06"/>
+
+  <!-- Accent line top -->
+  <rect x="0" y="0" width="1200" height="3" fill="url(#greenGrad)"/>
+
+  <!-- ─── LEFT SECTION : titre & stats ─── -->
+
+  <!-- Main headline -->
+  <text x="80" y="120" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="42" fill="#f8fafc" letter-spacing="-1">SMS relance</text>
+  <text x="80" y="170" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="42" fill="#f8fafc" letter-spacing="-1">panier abandonné</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="208" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="17" fill="#94a3b8">Atouts, limites et alternatives pour Shopify</text>
+
+  <!-- Separator line -->
+  <rect x="80" y="228" width="60" height="3" rx="2" fill="url(#greenGrad)"/>
+
+  <!-- Stat card 1 : Taux d'ouverture réel -->
+  <g filter="url(#cardShadow)">
+    <rect x="80" y="258" width="240" height="100" rx="12" fill="url(#statCard)" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <rect x="80" y="258" width="4" height="100" rx="2" fill="url(#greenGrad)"/>
+  <text x="100" y="290" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="13" fill="#64748b" text-transform="uppercase" letter-spacing="0.5">TAUX D'OUVERTURE RÉEL</text>
+  <text x="100" y="330" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="38" fill="#10b981" filter="url(#glowGreen)">30–35%</text>
+  <text x="100" y="350" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748b">(vs 98% annoncé par les plateformes)</text>
+
+  <!-- Stat card 2 : Taux de clic -->
+  <g filter="url(#cardShadow)">
+    <rect x="80" y="374" width="240" height="100" rx="12" fill="url(#statCard)" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <rect x="80" y="374" width="4" height="100" rx="2" fill="url(#greenGrad)"/>
+  <text x="100" y="406" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="13" fill="#64748b" letter-spacing="0.5">TAUX DE CLIC</text>
+  <text x="100" y="446" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="38" fill="#10b981" filter="url(#glowGreen)">8–10%</text>
+  <text x="100" y="466" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748b">(vs 2–5% email)</text>
+
+  <!-- Stat card 3 : Opt-out après relance -->
+  <g filter="url(#cardShadow)">
+    <rect x="80" y="490" width="240" height="100" rx="12" fill="url(#statCard)" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <rect x="80" y="490" width="4" height="100" rx="2" fill="#ef4444"/>
+  <text x="100" y="522" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="13" fill="#64748b" letter-spacing="0.5">OPT-OUT APRÈS RELANCE</text>
+  <text x="100" y="562" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="38" fill="#ef4444">3–5%</text>
+  <text x="100" y="582" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748b">(élevé vs courrier &lt;1%)</text>
+
+  <!-- ─── CENTRE : smartphone mockup ─── -->
+
+  <!-- Phone body -->
+  <g filter="url(#softShadow)">
+    <rect x="455" y="60" width="200" height="400" rx="28" fill="url(#phoneGrad)" stroke="#334155" stroke-width="2"/>
+  </g>
+
+  <!-- Phone notch / dynamic island -->
+  <rect x="520" y="74" width="70" height="18" rx="9" fill="#0f172a"/>
+  <circle cx="565" cy="83" r="5" fill="#1e293b"/>
+
+  <!-- Phone screen -->
+  <rect x="463" y="100" width="184" height="350" rx="4" fill="url(#screenGrad)"/>
+
+  <!-- Screen status bar -->
+  <text x="473" y="118" font-family="'Inter', Arial, sans-serif" font-size="10" fill="#94a3b8">9:41</text>
+  <rect x="610" y="111" width="22" height="8" rx="2" fill="#94a3b8" opacity="0.6"/>
+  <rect x="611" y="112" width="16" height="6" rx="1" fill="#10b981"/>
+  <circle cx="606" cy="115" r="3" fill="none" stroke="#94a3b8" stroke-width="1.2" opacity="0.6"/>
+
+  <!-- SMS app header -->
+  <rect x="463" y="125" width="184" height="36" fill="#1e293b"/>
+  <circle cx="483" cy="143" r="12" fill="#334155"/>
+  <text x="483" y="148" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="11" font-weight="700" fill="#10b981">M</text>
+  <text x="502" y="138" font-family="'Inter', Arial, sans-serif" font-size="11" font-weight="600" fill="#f1f5f9">Maison Lune</text>
+  <text x="502" y="152" font-family="'Inter', Arial, sans-serif" font-size="9" fill="#64748b">Aujourd'hui · 14:23</text>
+
+  <!-- SMS bubble incoming (store) -->
+  <g filter="url(#softShadow)">
+    <rect x="470" y="172" width="148" height="72" rx="14" rx="14" fill="url(#bubbleGrad)"/>
+    <polygon points="470,190 456,196 470,202" fill="#10b981"/>
+  </g>
+  <text x="480" y="192" font-family="'Inter', Arial, sans-serif" font-size="9.5" fill="#ffffff" font-weight="600">Maison Lune :</text>
+  <text x="480" y="207" font-family="'Inter', Arial, sans-serif" font-size="9" fill="#d1fae5">Votre panier vous attend —</text>
+  <text x="480" y="220" font-family="'Inter', Arial, sans-serif" font-size="9" fill="#d1fae5">Bougie Santal 290g à 38€</text>
+  <text x="480" y="234" font-family="'Inter', Arial, sans-serif" font-size="9" fill="#a7f3d0" text-decoration="underline">masl.fr/p3k8z</text>
+
+  <!-- Read time badge -->
+  <rect x="480" y="252" width="130" height="20" rx="4" fill="#0f172a" opacity="0.7"/>
+  <circle cx="492" cy="262" r="5" fill="#10b981" opacity="0.8"/>
+  <text x="501" y="266" font-family="'Inter', Arial, sans-serif" font-size="9" fill="#94a3b8">Lu en 3 min ou jamais lu</text>
+
+  <!-- Timing badge -->
+  <rect x="463" y="280" width="184" height="28" rx="0" fill="#1e293b" opacity="0.8"/>
+  <text x="555" y="299" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="10" font-weight="600" fill="#fbbf24">Fenêtre optimale : H+2 à H+4</text>
+
+  <!-- SMS compose bar -->
+  <rect x="463" y="425" width="184" height="25" rx="0" fill="#1e293b"/>
+  <rect x="470" y="428" width="140" height="18" rx="9" fill="#0f172a"/>
+  <text x="480" y="441" font-family="'Inter', Arial, sans-serif" font-size="9" fill="#475569">Message SMS...</text>
+  <circle cx="625" cy="437" r="8" fill="url(#greenGrad)"/>
+  <polygon points="621,437 629,433 629,441" fill="#ffffff"/>
+
+  <!-- Phone home bar -->
+  <rect x="515" y="456" width="80" height="4" rx="2" fill="#334155"/>
+
+  <!-- ─── RIGHT SECTION : contraintes & timing ─── -->
+
+  <!-- Section title -->
+  <text x="700" y="100" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="16" fill="#94a3b8" letter-spacing="1">3 CONTRAINTES CLÉS</text>
+
+  <!-- Constraint 1 -->
+  <g filter="url(#cardShadow)">
+    <rect x="700" y="116" width="410" height="70" rx="10" fill="url(#statCard)" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <!-- Icon circle -->
+  <circle cx="730" cy="151" r="18" fill="#0f172a" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="730" y="156" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="14" fill="#ef4444">⚖</text>
+  <text x="758" y="139" font-family="'Inter', Arial, sans-serif" font-weight="700" font-size="13" fill="#f1f5f9">Opt-in explicite obligatoire</text>
+  <text x="758" y="156" font-family="'Inter', Arial, sans-serif" font-size="12" fill="#94a3b8">40–60% seulement de votre base email</text>
+  <text x="758" y="172" font-family="'Inter', Arial, sans-serif" font-size="12" fill="#94a3b8">dispose d'un consentement SMS valide</text>
+
+  <!-- Constraint 2 -->
+  <g filter="url(#cardShadow)">
+    <rect x="700" y="200" width="410" height="70" rx="10" fill="url(#statCard)" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <circle cx="730" cy="235" r="18" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="730" y="240" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="14" fill="#f59e0b">€</text>
+  <text x="758" y="223" font-family="'Inter', Arial, sans-serif" font-weight="700" font-size="13" fill="#f1f5f9">Coût unitaire 10x à 150x l'email</text>
+  <text x="758" y="240" font-family="'Inter', Arial, sans-serif" font-size="12" fill="#94a3b8">0,05–0,15€/SMS · limite 160 car. (1 SMS)</text>
+  <text x="758" y="256" font-family="'Inter', Arial, sans-serif" font-size="12" fill="#94a3b8">306 car. = 2 SMS facturés</text>
+
+  <!-- Constraint 3 -->
+  <g filter="url(#cardShadow)">
+    <rect x="700" y="284" width="410" height="70" rx="10" fill="url(#statCard)" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <circle cx="730" cy="319" r="18" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="730" y="324" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#8b5cf6">!</text>
+  <text x="758" y="307" font-family="'Inter', Arial, sans-serif" font-weight="700" font-size="13" fill="#f1f5f9">Perçu intrusif par 58% des Français</text>
+  <text x="758" y="324" font-family="'Inter', Arial, sans-serif" font-size="12" fill="#94a3b8">YouGov 2024 · Paniers &gt;150€ : risque</text>
+  <text x="758" y="340" font-family="'Inter', Arial, sans-serif" font-size="12" fill="#94a3b8">de dégradation d'image de marque</text>
+
+  <!-- Opt-in rate visual bar -->
+  <g filter="url(#cardShadow)">
+    <rect x="700" y="368" width="410" height="90" rx="10" fill="url(#statCard)" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <text x="720" y="392" font-family="'Inter', Arial, sans-serif" font-weight="700" font-size="12" fill="#94a3b8" letter-spacing="0.5">COUVERTURE SMS SUR VOTRE BASE EMAIL</text>
+
+  <!-- Bar background -->
+  <rect x="720" y="402" width="370" height="16" rx="8" fill="#1e293b"/>
+  <!-- Bar filled — 50% opt-in SMS -->
+  <rect x="720" y="402" width="185" height="16" rx="8" fill="url(#greenGrad)"/>
+  <!-- Label -->
+  <text x="720" y="432" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#10b981" font-weight="600">50% avec opt-in SMS</text>
+  <text x="905" y="432" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#475569">50% sans opt-in</text>
+  <text x="835" y="445" font-family="'Inter', Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">→ alternative : carte postale (sans consentement)</text>
+
+  <!-- Panier premium warning box -->
+  <g filter="url(#cardShadow)">
+    <rect x="700" y="472" width="410" height="66" rx="10" fill="#1a0f2e" stroke="#6c63ff" stroke-width="1.5"/>
+  </g>
+  <rect x="700" y="472" width="4" height="66" rx="2" fill="#6c63ff"/>
+  <text x="718" y="494" font-family="'Inter', Arial, sans-serif" font-weight="700" font-size="12" fill="#a78bfa">Panier &gt; 150€ : le SMS dégrade l'image</text>
+  <text x="718" y="511" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#7c6fcd">Pour les segments premium, la carte postale</text>
+  <text x="718" y="526" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#7c6fcd">s'impose : 17 jours de dwell time, aucun opt-in requis</text>
+
+  <!-- ─── BOTTOM BAR : branding ─── -->
+  <rect x="0" y="592" width="1200" height="38" fill="#070f1c" opacity="0.95"/>
+
+  <!-- postcart.app logo area (bottom-left) -->
+  <circle cx="36" cy="611" r="12" fill="#10b981" opacity="0.15"/>
+  <circle cx="36" cy="611" r="8" fill="#10b981"/>
+  <text x="36" y="615" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9" font-weight="700" fill="#ffffff">p</text>
+  <text x="54" y="609" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="13" fill="#f8fafc">postcart</text>
+  <text x="110" y="609" font-family="'Inter', Arial, sans-serif" font-size="13" fill="#10b981">.app</text>
+
+  <!-- Tagline bottom-left -->
+  <text x="54" y="622" font-family="'Inter', Arial, sans-serif" font-size="10" fill="#475569">Relance panier par carte postale — sans consentement digital</text>
+
+  <!-- Right badge -->
+  <rect x="1020" y="597" width="160" height="26" rx="5" fill="#10b981" opacity="0.12" stroke="#10b981" stroke-width="1"/>
+  <text x="1100" y="614" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="11" font-weight="600" fill="#10b981">15 cartes offertes →</text>
+
+</svg>

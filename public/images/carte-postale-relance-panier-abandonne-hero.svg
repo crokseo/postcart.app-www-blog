@@ -1,0 +1,93 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f4ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6c63ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="4" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="0.3" opacity="0.05"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Postcard shape — repositioned to the right -->
+  <g transform="translate(875, 315) rotate(-3)">
+    <rect x="-260" y="-155" width="520" height="310" rx="8" ry="8" fill="url(#card)" filter="url(#shadow)"/>
+    <!-- Stamp area -->
+    <rect x="180" y="-135" width="60" height="75" rx="4" fill="#e8ecf8" stroke="#d0d8f0" stroke-width="1"/>
+    <text x="210" y="-100" text-anchor="middle" font-family="Arial" font-size="9" fill="#9ca3c8">TIMBRE</text>
+    <!-- Address lines -->
+    <line x1="-220" y1="10" x2="150" y2="10" stroke="#e0e0e0" stroke-width="1.5"/>
+    <line x1="-220" y1="35" x2="150" y2="35" stroke="#e0e0e0" stroke-width="1.5"/>
+    <line x1="-220" y1="60" x2="150" y2="60" stroke="#e0e0e0" stroke-width="1.5"/>
+    <line x1="-220" y1="85" x2="90" y2="85" stroke="#e0e0e0" stroke-width="1.5"/>
+    <!-- QR code placeholder -->
+    <rect x="160" y="30" width="80" height="80" rx="4" fill="#1a1a2e"/>
+    <rect x="165" y="35" width="30" height="30" rx="2" fill="#ffffff"/>
+    <rect x="165" y="75" width="30" height="30" rx="2" fill="#ffffff"/>
+    <rect x="205" y="35" width="30" height="30" rx="2" fill="#ffffff"/>
+    <rect x="170" y="40" width="20" height="20" rx="1" fill="#1a1a2e"/>
+    <rect x="170" y="80" width="20" height="20" rx="1" fill="#1a1a2e"/>
+    <rect x="210" y="40" width="20" height="20" rx="1" fill="#1a1a2e"/>
+    <!-- Dividing line -->
+    <line x1="0" y1="-150" x2="0" y2="150" stroke="#e0e0e0" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <!-- Left side — product image placeholder -->
+    <rect x="-255" y="-150" width="250" height="250" rx="0" fill="#f5f5ff"/>
+    <text x="-130" y="-55" text-anchor="middle" font-family="Arial" font-size="13" fill="#9ca3c8">Votre produit</text>
+    <text x="-130" y="-35" text-anchor="middle" font-family="Arial" font-size="13" fill="#9ca3c8">abandonné</text>
+    <!-- Accent bar on postcard -->
+    <rect x="-255" y="110" width="510" height="6" rx="0" fill="url(#accent)" opacity="0.7"/>
+    <!-- Prenom line on right -->
+    <text x="-215" y="-65" font-family="Georgia, serif" font-size="14" fill="#6c63ff" font-style="italic">Bonjour Marie,</text>
+    <text x="-215" y="-40" font-family="Arial" font-size="11" fill="#555555">Vous avez oublié quelque chose...</text>
+  </g>
+
+  <!-- ======= TEXTE AU PREMIER PLAN — rendu après les éléments décoratifs ======= -->
+
+  <!-- Label catégorie -->
+  <text x="80" y="150" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#6c63ff" letter-spacing="3">RELANCE PANIER ABANDONNÉ</text>
+
+  <!-- Titre principal -->
+  <text x="80" y="210" font-family="Georgia, serif" font-size="42" font-weight="bold" fill="#ffffff" letter-spacing="-1">La carte postale</text>
+  <text x="80" y="260" font-family="Georgia, serif" font-size="42" font-weight="bold" fill="#ffffff" letter-spacing="-1">qui convertit</text>
+  <text x="80" y="310" font-family="Georgia, serif" font-size="32" font-weight="normal" fill="#a0a8c8">quand l'email échoue.</text>
+
+  <!-- Stats pills -->
+  <g transform="translate(80, 370)">
+    <rect x="0" y="0" width="130" height="56" rx="28" fill="#6c63ff" opacity="0.15"/>
+    <rect x="0" y="0" width="130" height="56" rx="28" fill="none" stroke="#6c63ff" stroke-width="1" opacity="0.4"/>
+    <text x="65" y="22" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" fill="#ffffff">91%</text>
+    <text x="65" y="44" text-anchor="middle" font-family="Arial" font-size="11" fill="#a0a8c8">d'ouverture</text>
+
+    <rect x="148" y="0" width="130" height="56" rx="28" fill="#a855f7" opacity="0.15"/>
+    <rect x="148" y="0" width="130" height="56" rx="28" fill="none" stroke="#a855f7" stroke-width="1" opacity="0.4"/>
+    <text x="213" y="22" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" fill="#ffffff">12x</text>
+    <text x="213" y="44" text-anchor="middle" font-family="Arial" font-size="11" fill="#a0a8c8">ROAS HexClad</text>
+
+    <rect x="296" y="0" width="130" height="56" rx="28" fill="#22c55e" opacity="0.15"/>
+    <rect x="296" y="0" width="130" height="56" rx="28" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.4"/>
+    <text x="361" y="22" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" fill="#ffffff">17j</text>
+    <text x="361" y="44" text-anchor="middle" font-family="Arial" font-size="11" fill="#a0a8c8">dwell time</text>
+  </g>
+
+  <!-- Branding -->
+  <text x="80" y="590" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#6c63ff">postcart</text>
+  <text x="165" y="590" font-family="Arial, sans-serif" font-size="18" fill="#a0a8c8">.app</text>
+  <text x="80" y="612" font-family="Arial, sans-serif" font-size="12" fill="#606080">Relance panier par courrier postal — intégration Shopify en 15 min</text>
+</svg>

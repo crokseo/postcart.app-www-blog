@@ -1,0 +1,175 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="violetGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6c63ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6c63ff;stop-opacity:0.8" />
+      <stop offset="75%" style="stop-color:#6c63ff;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.9" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowGreen">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadowDrop">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#6c63ff" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Subtle dot pattern -->
+  <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+    <circle cx="14" cy="14" r="1" fill="#ffffff" opacity="0.03"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- Decorative background circles -->
+  <circle cx="950" cy="100" r="180" fill="#6c63ff" opacity="0.04"/>
+  <circle cx="200" cy="500" r="140" fill="#10b981" opacity="0.04"/>
+  <circle cx="1100" cy="520" r="100" fill="#6c63ff" opacity="0.03"/>
+
+  <!-- ── HEADER TEXT ── -->
+  <text x="80" y="82" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#6c63ff" letter-spacing="4" text-transform="uppercase">TIMING &amp; SÉQUENCE</text>
+
+  <text x="80" y="132" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="bold" fill="#ffffff" letter-spacing="-1">Quand envoyer votre</text>
+  <text x="80" y="178" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="bold" fill="#ffffff" letter-spacing="-1">relance panier ?</text>
+
+  <text x="80" y="222" font-family="Arial, sans-serif" font-size="15" fill="#94a3b8">La variable la plus sous-optimisée en e-commerce</text>
+
+  <!-- Decorative separator line -->
+  <rect x="80" y="242" width="60" height="3" rx="2" fill="url(#violetGrad)"/>
+
+  <!-- Stat badge -->
+  <rect x="80" y="268" width="290" height="68" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="100" y="293" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Taux de conversion chute de</text>
+  <text x="100" y="324" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#6c63ff">−50 %</text>
+  <text x="218" y="324" font-family="Arial, sans-serif" font-size="13" fill="#94a3b8">après 6h</text>
+
+  <rect x="390" y="268" width="270" height="68" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="410" y="293" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Email 1 doit partir entre</text>
+  <text x="410" y="324" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#6c63ff">H+1</text>
+  <text x="462" y="324" font-family="Arial, sans-serif" font-size="22" fill="#475569"> — </text>
+  <text x="490" y="324" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#6c63ff">H+3</text>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- TIMELINE HORIZONTALE — y=430 -->
+  <!-- Zone timeline -->
+  <rect x="60" y="365" width="1100" height="220" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Label axe -->
+  <text x="80" y="395" font-family="Arial, sans-serif" font-size="10" fill="#475569" letter-spacing="2">TIMELINE DE RELANCE</text>
+
+  <!-- Ligne principale timeline -->
+  <line x1="110" y1="470" x2="1110" y2="470" stroke="url(#lineGrad)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Flèche droite -->
+  <polygon points="1110,464 1126,470 1110,476" fill="#10b981" opacity="0.8"/>
+
+  <!-- Labels de temps sur l'axe -->
+  <text x="110" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">J0</text>
+  <text x="270" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">H+1/3</text>
+  <text x="430" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">H+2/4</text>
+  <text x="590" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">J+2/3</text>
+  <text x="750" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">J+5</text>
+  <text x="950" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">J+10</text>
+  <text x="1100" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">J+14</text>
+
+  <!-- Tick marks -->
+  <line x1="110" y1="465" x2="110" y2="475" stroke="#475569" stroke-width="1.5"/>
+  <line x1="270" y1="465" x2="270" y2="475" stroke="#6c63ff" stroke-width="2"/>
+  <line x1="430" y1="465" x2="430" y2="475" stroke="#6c63ff" stroke-width="2"/>
+  <line x1="590" y1="465" x2="590" y2="475" stroke="#6c63ff" stroke-width="2"/>
+  <line x1="750" y1="465" x2="750" y2="475" stroke="#6c63ff" stroke-width="2"/>
+  <line x1="950" y1="465" x2="950" y2="475" stroke="#10b981" stroke-width="2"/>
+  <line x1="1100" y1="465" x2="1100" y2="475" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- ── POINT 0 : Abandon ── -->
+  <circle cx="110" cy="470" r="8" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+  <text x="110" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Abandon</text>
+  <text x="110" y="453" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">panier</text>
+
+  <!-- ── POINT 1 : Email 1 H+1/H+3 ── -->
+  <circle cx="270" cy="470" r="14" fill="url(#violetGrad)" filter="url(#glow)"/>
+  <text x="270" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">E1</text>
+  <!-- Bulle info -->
+  <rect x="196" y="380" width="148" height="62" rx="8" fill="#1e1b4b" stroke="#6c63ff" stroke-width="1.5"/>
+  <line x1="270" y1="442" x2="270" y2="456" stroke="#6c63ff" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="270" y="398" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#a5b4fc">Email 1</text>
+  <text x="270" y="413" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#818cf8">H+1 à H+3</text>
+  <text x="270" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6c63ff">45–50 % ouv.</text>
+
+  <!-- ── POINT 2 : SMS H+2/H+4 ── -->
+  <circle cx="430" cy="470" r="11" fill="#1e293b" stroke="#6c63ff" stroke-width="2"/>
+  <text x="430" y="474" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#a5b4fc">SMS</text>
+  <!-- Bulle info -->
+  <rect x="362" y="520" width="136" height="52" rx="8" fill="#1e293b" stroke="#6c63ff" stroke-width="1" opacity="0.9"/>
+  <line x1="430" y1="481" x2="430" y2="520" stroke="#6c63ff" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="430" y="538" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#a5b4fc">SMS (opt-in)</text>
+  <text x="430" y="553" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#818cf8">H+2 à H+4</text>
+  <text x="430" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Fenêtre très courte</text>
+
+  <!-- ── POINT 3 : Email 2 J+2/J+3 ── -->
+  <circle cx="590" cy="470" r="14" fill="url(#violetGrad)" filter="url(#glow)" opacity="0.85"/>
+  <text x="590" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">E2</text>
+  <!-- Bulle info -->
+  <rect x="516" y="380" width="148" height="62" rx="8" fill="#1e1b4b" stroke="#6c63ff" stroke-width="1.5"/>
+  <line x1="590" y1="442" x2="590" y2="456" stroke="#6c63ff" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="590" y="398" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#a5b4fc">Email 2</text>
+  <text x="590" y="413" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#818cf8">J+2 à J+3</text>
+  <text x="590" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6c63ff">30–35 % ouv.</text>
+
+  <!-- ── POINT 4 : Email 3 J+5 ── -->
+  <circle cx="750" cy="470" r="14" fill="url(#violetGrad)" filter="url(#glow)" opacity="0.65"/>
+  <text x="750" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">E3</text>
+  <!-- Bulle info -->
+  <rect x="676" y="380" width="148" height="62" rx="8" fill="#1e1b4b" stroke="#6c63ff" stroke-width="1.5"/>
+  <line x1="750" y1="442" x2="750" y2="456" stroke="#6c63ff" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="750" y="398" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#a5b4fc">Email 3</text>
+  <text x="750" y="413" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#818cf8">J+5 — Dernière chance</text>
+  <text x="750" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6c63ff">~18 % ouv. réelle</text>
+
+  <!-- ── POINT 5 : Carte postale J+10 ── -->
+  <circle cx="950" cy="470" r="18" fill="url(#greenGrad)" filter="url(#glowGreen)"/>
+  <!-- Icône lettre -->
+  <rect x="939" y="461" width="22" height="16" rx="2" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+  <polyline points="939,461 950,471 961,461" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+  <!-- Bulle info -->
+  <rect x="858" y="380" width="184" height="72" rx="8" fill="#052e16" stroke="#10b981" stroke-width="2"/>
+  <line x1="950" y1="452" x2="950" y2="456" stroke="#10b981" stroke-width="2" stroke-dasharray="3,2"/>
+  <text x="950" y="399" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#34d399">Carte postale</text>
+  <text x="950" y="414" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6ee7b7">J+10 — filet physique</text>
+  <text x="950" y="429" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#10b981">91 % ouverture</text>
+  <text x="950" y="444" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Arrivée J+12-14</text>
+
+  <!-- Zone grisée "hors séquence digitale" -->
+  <rect x="820" y="525" width="310" height="24" rx="4" fill="#052e16" opacity="0.5"/>
+  <text x="975" y="541" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#34d399">Pic d'attention post-digital · +18 % taux réponse (USPS)</text>
+
+  <!-- ── BRANDING BAS GAUCHE ── -->
+  <g transform="translate(80, 572)">
+    <rect x="0" y="0" width="160" height="32" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <circle cx="18" cy="16" r="7" fill="url(#violetGrad)"/>
+    <text x="16" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">P</text>
+    <text x="34" y="21" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">postcart</text>
+    <text x="94" y="21" font-family="Arial, sans-serif" font-size="12" fill="#6c63ff">.app</text>
+  </g>
+
+  <!-- Source label bas droite -->
+  <text x="1120" y="595" text-anchor="end" font-family="Arial, sans-serif" font-size="9" fill="#334155">Sources : Klaviyo, Omnisend 2025, USPS</text>
+</svg>

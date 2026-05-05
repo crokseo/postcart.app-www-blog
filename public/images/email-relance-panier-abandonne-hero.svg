@@ -1,0 +1,101 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2a4a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="emailGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg3)"/>
+
+  <!-- Pattern -->
+  <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="15" cy="15" r="1" fill="#ffffff" opacity="0.04"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- Email sequence visual (right side) -->
+  <g transform="translate(700, 80)">
+    <!-- Email 1 — open -->
+    <rect x="0" y="0" width="380" height="110" rx="10" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect x="0" y="0" width="380" height="35" rx="10" fill="#2563eb" opacity="0.5"/>
+    <rect x="0" y="25" width="380" height="10" fill="#2563eb" opacity="0.5"/>
+    <text x="20" y="24" font-family="Arial" font-size="13" fill="#93c5fd">Email 1 — H+1</text>
+    <text x="320" y="24" font-family="Arial" font-size="11" fill="#60a5fa">45-50% ouv.</text>
+    <text x="20" y="58" font-family="Arial" font-size="12" fill="#e2e8f0">Rappel sans pression</text>
+    <text x="20" y="80" font-family="Arial" font-size="11" fill="#94a3b8">Visuel produit · Prix · CTA unique</text>
+    <text x="20" y="100" font-family="Arial" font-size="11" fill="#94a3b8">Sans réduction</text>
+    <!-- Open indicator -->
+    <circle cx="355" cy="55" r="12" fill="#10b981" opacity="0.8"/>
+    <text x="355" y="60" text-anchor="middle" font-family="Arial" font-size="14" fill="white">✓</text>
+
+    <!-- Email 2 -->
+    <rect x="0" y="130" width="380" height="110" rx="10" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5" opacity="0.85"/>
+    <rect x="0" y="130" width="380" height="35" rx="10" fill="#2563eb" opacity="0.4"/>
+    <rect x="0" y="155" width="380" height="10" fill="#2563eb" opacity="0.4"/>
+    <text x="20" y="154" font-family="Arial" font-size="13" fill="#93c5fd">Email 2 — J+2</text>
+    <text x="308" y="154" font-family="Arial" font-size="11" fill="#60a5fa">30-35% ouv.</text>
+    <text x="20" y="188" font-family="Arial" font-size="12" fill="#e2e8f0">Réassurance · Avis clients</text>
+    <text x="20" y="210" font-family="Arial" font-size="11" fill="#94a3b8">Politique retour · Alternatives</text>
+    <text x="20" y="230" font-family="Arial" font-size="11" fill="#94a3b8">Sans réduction (encore)</text>
+
+    <!-- Email 3 -->
+    <rect x="0" y="260" width="380" height="110" rx="10" fill="#1e3a5f" stroke="#f59e0b" stroke-width="1.5" opacity="0.7"/>
+    <rect x="0" y="260" width="380" height="35" rx="10" fill="#d97706" opacity="0.35"/>
+    <rect x="0" y="285" width="380" height="10" fill="#d97706" opacity="0.35"/>
+    <text x="20" y="284" font-family="Arial" font-size="13" fill="#fbbf24">Email 3 — J+5</text>
+    <text x="290" y="284" font-family="Arial" font-size="11" fill="#f59e0b">~18% ouv. réelle</text>
+    <text x="20" y="318" font-family="Arial" font-size="12" fill="#e2e8f0">Dernière chance</text>
+    <text x="20" y="340" font-family="Arial" font-size="11" fill="#94a3b8">Incentive non-monétaire ou absent</text>
+    <text x="20" y="360" font-family="Arial" font-size="11" fill="#f59e0b">⚠ Réduction = risque Pavlovien</text>
+
+    <!-- Arrow and postcard -->
+    <line x1="190" y1="385" x2="190" y2="415" stroke="#10b981" stroke-width="2" stroke-dasharray="4,4"/>
+    <polygon points="183,415 190,430 197,415" fill="#10b981"/>
+    <rect x="40" y="435" width="300" height="60" rx="10" fill="#064e3b" stroke="#10b981" stroke-width="2"/>
+    <text x="190" y="463" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#10b981">J+10 — Carte postale</text>
+    <text x="190" y="483" text-anchor="middle" font-family="Arial" font-size="11" fill="#6ee7b7">91% ouverture · Aucun opt-in</text>
+  </g>
+
+  <!-- Left text -->
+  <text x="80" y="140" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#3b82f6" letter-spacing="3">EMAIL DE RELANCE PANIER</text>
+
+  <text x="80" y="200" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#ffffff" letter-spacing="-1">Le guide complet</text>
+  <text x="80" y="248" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#ffffff" letter-spacing="-1">(et honnête)</text>
+  <text x="80" y="296" font-family="Georgia, serif" font-size="28" fill="#94a3b8">pour 2026.</text>
+
+  <!-- Key metrics -->
+  <g transform="translate(80, 340)">
+    <rect x="0" y="0" width="240" height="65" rx="8" fill="#1e293b" stroke="#374151" stroke-width="1"/>
+    <text x="120" y="24" text-anchor="middle" font-family="Arial" font-size="11" fill="#94a3b8">Avec une séquence de 3 emails</text>
+    <text x="120" y="46" text-anchor="middle" font-family="Arial" font-size="26" font-weight="bold" fill="#3b82f6">+63%</text>
+    <text x="120" y="62" text-anchor="middle" font-family="Arial" font-size="10" fill="#6b7280">de revenus vs 1 seul email</text>
+
+    <rect x="258" y="0" width="240" height="65" rx="8" fill="#1e293b" stroke="#374151" stroke-width="1"/>
+    <text x="378" y="24" text-anchor="middle" font-family="Arial" font-size="11" fill="#94a3b8">Plafond naturel de l'email seul</text>
+    <text x="378" y="46" text-anchor="middle" font-family="Arial" font-size="26" font-weight="bold" fill="#ef4444">5-8%</text>
+    <text x="378" y="62" text-anchor="middle" font-family="Arial" font-size="10" fill="#6b7280">des paniers récupérés</text>
+  </g>
+
+  <!-- iOS warning badge -->
+  <g transform="translate(80, 440)">
+    <rect x="0" y="0" width="420" height="45" rx="8" fill="#7c2d12" opacity="0.6"/>
+    <rect x="0" y="0" width="420" height="45" rx="8" fill="none" stroke="#f97316" stroke-width="1"/>
+    <text x="20" y="20" font-family="Arial" font-size="12" fill="#fed7aa">⚠ iOS 18 : 15-25% des "ouvertures" sont des pixels fantômes</text>
+    <text x="20" y="36" font-family="Arial" font-size="11" fill="#fb923c">Votre vrai taux d'ouverture est inférieur à ce que Klaviyo affiche</text>
+  </g>
+
+  <!-- Logo -->
+  <text x="80" y="568" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#6c63ff">postcart</text>
+  <text x="165" y="568" font-family="Arial, sans-serif" font-size="18" fill="#94a3b8">.app</text>
+  <text x="80" y="590" font-family="Arial, sans-serif" font-size="12" fill="#4b5563">Compléter l'email avec un canal à 91% d'ouverture</text>
+</svg>

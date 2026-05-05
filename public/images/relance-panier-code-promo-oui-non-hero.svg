@@ -1,0 +1,110 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b91c1c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="0.2" opacity="0.06"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Left side — headline block -->
+  <text x="64" y="88" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#94a3b8" letter-spacing="4">STRATÉGIE E-COMMERCE · ANALYSE EXPERTE</text>
+
+  <text x="64" y="148" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="bold" fill="#f1f5f9" letter-spacing="-1">Code promo dans</text>
+  <text x="64" y="194" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="bold" fill="#f1f5f9" letter-spacing="-1">la relance panier :</text>
+  <text x="64" y="242" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="bold" fill="#ef4444" letter-spacing="-1">erreur stratégique.</text>
+
+  <text x="64" y="286" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#94a3b8">70% des boutiques font cette erreur.</text>
+  <text x="64" y="310" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#94a3b8">Données Klaviyo 2024 à l'appui.</text>
+
+  <!-- Main stat block -->
+  <rect x="64" y="348" width="340" height="100" rx="12" fill="#1e293b" stroke="#374151" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="64" y="348" width="5" height="100" rx="2" fill="#ef4444"/>
+  <text x="88" y="378" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8">abandon intentionnel créé par la réduction</text>
+  <text x="88" y="410" font-family="Arial, sans-serif" font-size="52" font-weight="bold" fill="#ef4444" filter="url(#softGlow)">+15-25%</text>
+  <text x="88" y="434" font-family="Arial, sans-serif" font-size="11" fill="#64748b">Source : Klaviyo 2024 — boutiques avec réduction dès email 2</text>
+
+  <!-- Second stat block -->
+  <rect x="64" y="468" width="340" height="80" rx="12" fill="#1e293b" stroke="#374151" stroke-width="1"/>
+  <rect x="64" y="468" width="5" height="80" rx="2" fill="#10b981"/>
+  <text x="88" y="494" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8">coût livraison offerte vs remise 10%</text>
+  <text x="88" y="528" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#10b981">5–8€ vs 10€</text>
+
+  <!-- Right side — Balance / decision visual -->
+  <!-- Balance pole -->
+  <line x1="900" y1="200" x2="900" y2="520" stroke="#334155" stroke-width="3"/>
+  <!-- Balance base -->
+  <rect x="840" y="510" width="120" height="20" rx="4" fill="#334155"/>
+  <rect x="870" y="490" width="60" height="22" rx="3" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+
+  <!-- Balance beam — tilted slightly left (red side heavier) -->
+  <line x1="680" y1="240" x2="1120" y2="220" stroke="#475569" stroke-width="3"/>
+  <circle cx="900" cy="230" r="6" fill="#94a3b8"/>
+
+  <!-- Left pan (red - risks) -->
+  <line x1="720" y1="245" x2="720" y2="340" stroke="#ef4444" stroke-width="2" opacity="0.7"/>
+  <line x1="680" y1="245" x2="760" y2="245" stroke="#ef4444" stroke-width="2" opacity="0.7"/>
+  <!-- Pan shape -->
+  <ellipse cx="720" cy="355" rx="65" ry="18" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+  <rect x="658" y="337" width="124" height="18" rx="0" fill="#1e293b"/>
+
+  <!-- X mark on left pan -->
+  <circle cx="720" cy="380" r="32" fill="#7f1d1d" opacity="0.5"/>
+  <text x="720" y="392" text-anchor="middle" font-family="Arial" font-size="36" font-weight="bold" fill="#ef4444" filter="url(#glow)">✕</text>
+  <text x="720" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#ef4444">CODE PROMO</text>
+  <text x="720" y="448" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">marge érodée</text>
+  <text x="720" y="463" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">signal de désespoir</text>
+
+  <!-- Right pan (green - alternatives) -->
+  <line x1="1080" y1="228" x2="1080" y2="310" stroke="#10b981" stroke-width="2" opacity="0.7"/>
+  <line x1="1040" y1="228" x2="1120" y2="228" stroke="#10b981" stroke-width="2" opacity="0.7"/>
+  <!-- Pan shape -->
+  <ellipse cx="1080" cy="325" rx="65" ry="18" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+  <rect x="1018" y="307" width="124" height="18" rx="0" fill="#1e293b"/>
+
+  <!-- Check mark on right pan -->
+  <circle cx="1080" cy="350" r="32" fill="#064e3b" opacity="0.5"/>
+  <text x="1080" y="362" text-anchor="middle" font-family="Arial" font-size="36" font-weight="bold" fill="#10b981" filter="url(#glow)">✓</text>
+  <text x="1080" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#10b981">ALTERNATIVES</text>
+  <text x="1080" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">livraison offerte</text>
+  <text x="1080" y="443" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">urgence réelle · FOMO</text>
+
+  <!-- Right side — label "70% FONT L'ERREUR" -->
+  <rect x="780" y="100" width="240" height="64" rx="10" fill="#450a0a" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="900" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#ef4444">70% DES BOUTIQUES</text>
+  <text x="900" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#fca5a5">font cette erreur — Klaviyo 2024</text>
+
+  <!-- Branding -->
+  <text x="64" y="598" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#475569" letter-spacing="1">postcart.app</text>
+  <text x="152" y="598" font-family="Arial, sans-serif" font-size="13" fill="#334155"> · relance panier intelligente</text>
+
+  <!-- Decorative accent line bottom -->
+  <rect x="0" y="615" width="1200" height="3" fill="url(#redGrad)" opacity="0.6"/>
+</svg>

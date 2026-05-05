@@ -3,9 +3,12 @@ import { getCollection, render } from 'astro:content';
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
 export async function getStaticPaths() {
-  const posts = (await getCollection('blog')).sort(
-    (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
-  );
+  const today = new Date();
+  today.setHours(23, 59, 59, 999);
+
+  const posts = (await getCollection('blog'))
+    .filter(p => p.data.date <= today)
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
   return posts.map((post, index) => ({
     params: { slug: post.id.replace(/\.md$/, '') },
     props: {

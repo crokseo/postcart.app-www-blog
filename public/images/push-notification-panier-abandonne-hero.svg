@@ -1,0 +1,258 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#0c1a30;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#071527;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22d3ee;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cyanGradV" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="phoneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2540;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111827;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="notifGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:0.98" />
+      <stop offset="100%" style="stop-color:#0f1f3d;stop-opacity:0.98" />
+    </linearGradient>
+    <linearGradient id="statCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:0.95" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glowCyan">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="notifShadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="16" flood-color="#06b6d4" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Dot grid subtle -->
+  <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="15" cy="15" r="1" fill="#334155" opacity="0.25"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- Cyan ambient glow — top right -->
+  <ellipse cx="950" cy="160" rx="280" ry="200" fill="#06b6d4" opacity="0.05"/>
+
+  <!-- Accent line top -->
+  <rect x="0" y="0" width="1200" height="3" fill="url(#cyanGrad)"/>
+
+  <!-- ─── LEFT SECTION : headline + stat cards ─── -->
+
+  <!-- Main headline -->
+  <text x="80" y="108" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="40" fill="#f8fafc" letter-spacing="-1">Push notification</text>
+  <text x="80" y="156" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="40" fill="#f8fafc" letter-spacing="-1">panier abandonné</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="194" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="16" fill="#94a3b8">Web push · App push · Opt-in · iOS 16.4</text>
+
+  <!-- Separator -->
+  <rect x="80" y="214" width="60" height="3" rx="2" fill="url(#cyanGrad)"/>
+
+  <!-- Stat card 1 — Opt-in push -->
+  <g filter="url(#cardShadow)">
+    <rect x="80" y="242" width="250" height="100" rx="12" fill="url(#statCard)" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <rect x="80" y="242" width="4" height="100" rx="2" fill="url(#cyanGrad)"/>
+  <text x="100" y="272" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="12" fill="#64748b" letter-spacing="0.5">TAUX D'OPT-IN WEB PUSH</text>
+  <text x="100" y="314" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="40" fill="#06b6d4" filter="url(#glowCyan)">1–5%</text>
+  <text x="100" y="334" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b">des visiteurs (Omnisend, 2025)</text>
+
+  <!-- Stat card 2 — Taux d'ouverture -->
+  <g filter="url(#cardShadow)">
+    <rect x="80" y="358" width="250" height="100" rx="12" fill="url(#statCard)" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <rect x="80" y="358" width="4" height="100" rx="2" fill="url(#cyanGrad)"/>
+  <text x="100" y="388" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="12" fill="#64748b" letter-spacing="0.5">TAUX D'OUVERTURE PUSH</text>
+  <text x="100" y="430" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="40" fill="#06b6d4" filter="url(#glowCyan)">7–12%</text>
+  <text x="100" y="450" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b">vs 91% courrier · 30–35% SMS</text>
+
+  <!-- Stat card 3 — Désactivation -->
+  <g filter="url(#cardShadow)">
+    <rect x="80" y="474" width="250" height="100" rx="12" fill="url(#statCard)" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <rect x="80" y="474" width="4" height="100" rx="2" fill="#ef4444"/>
+  <text x="100" y="504" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="12" fill="#64748b" letter-spacing="0.5">DÉSACTIVATION (30 JOURS)</text>
+  <text x="100" y="546" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="40" fill="#ef4444">45–60%</text>
+  <text x="100" y="566" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748b">des abonnés (MoEngage, 2024)</text>
+
+  <!-- ─── CENTRE : smartphone avec push notifications ─── -->
+
+  <!-- Phone body -->
+  <g filter="url(#softShadow)">
+    <rect x="440" y="55" width="210" height="430" rx="30" fill="url(#phoneGrad)" stroke="#334155" stroke-width="2"/>
+  </g>
+
+  <!-- Dynamic island -->
+  <rect x="508" y="70" width="74" height="20" rx="10" fill="#0f172a"/>
+  <circle cx="556" cy="80" r="5" fill="#1e293b"/>
+
+  <!-- Phone screen -->
+  <rect x="448" y="98" width="194" height="380" rx="6" fill="url(#screenGrad)"/>
+
+  <!-- Status bar -->
+  <text x="458" y="118" font-family="'Inter', Arial, sans-serif" font-size="10" fill="#94a3b8">9:41</text>
+  <rect x="618" y="111" width="14" height="8" rx="2" fill="#334155"/>
+  <rect x="619" y="112" width="10" height="6" rx="1" fill="#06b6d4"/>
+
+  <!-- Lock screen area -->
+  <text x="545" y="148" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="28" font-weight="300" fill="#f1f5f9">9:41</text>
+  <text x="545" y="166" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#94a3b8">Mardi 29 avril</text>
+
+  <!-- Push notification card 1 (principal) -->
+  <g filter="url(#notifShadow)">
+    <rect x="456" y="182" width="178" height="72" rx="14" fill="url(#notifGrad)" stroke="#06b6d4" stroke-width="1"/>
+  </g>
+  <!-- App icon circle -->
+  <circle cx="472" cy="200" r="10" fill="url(#cyanGradV)"/>
+  <text x="472" y="204" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">P</text>
+  <!-- Notif header -->
+  <text x="487" y="199" font-family="'Inter', Arial, sans-serif" font-size="9" font-weight="700" fill="#94a3b8">MA BOUTIQUE · Maintenant</text>
+  <!-- Notif title -->
+  <text x="458" y="219" font-family="'Inter', Arial, sans-serif" font-size="10" font-weight="700" fill="#f1f5f9">Votre panier vous attend !</text>
+  <!-- Notif body -->
+  <text x="458" y="234" font-family="'Inter', Arial, sans-serif" font-size="9" fill="#94a3b8">Sneakers Air Max · 89€</text>
+  <text x="458" y="247" font-family="'Inter', Arial, sans-serif" font-size="9" fill="#06b6d4">Reprendre mon panier →</text>
+
+  <!-- Push notification card 2 (plus petite, en dessous) -->
+  <g filter="url(#cardShadow)">
+    <rect x="456" y="264" width="178" height="58" rx="12" fill="url(#notifGrad)" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <circle cx="472" cy="280" r="9" fill="#8b5cf6" opacity="0.9"/>
+  <text x="472" y="284" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">S</text>
+  <text x="486" y="279" font-family="'Inter', Arial, sans-serif" font-size="8" font-weight="700" fill="#64748b">Shopify · Il y a 2h</text>
+  <text x="458" y="298" font-family="'Inter', Arial, sans-serif" font-size="9" font-weight="600" fill="#cbd5e1">Votre panier expire ce soir</text>
+  <text x="458" y="314" font-family="'Inter', Arial, sans-serif" font-size="8.5" fill="#64748b">2 articles · 134€</text>
+
+  <!-- Désactivation label -->
+  <rect x="448" y="332" width="194" height="26" rx="0" fill="#1e293b" opacity="0.9"/>
+  <text x="545" y="349" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9.5" font-weight="600" fill="#f59e0b">Fenêtre optimale : &lt; 30 min après abandon</text>
+
+  <!-- Notification settings mockup -->
+  <rect x="456" y="366" width="178" height="100" rx="10" fill="#0f172a" opacity="0.8"/>
+  <text x="545" y="386" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9" font-weight="700" fill="#64748b">PARAMÈTRES NOTIFICATIONS</text>
+  <!-- iOS toggle off -->
+  <rect x="462" y="394" width="164" height="28" rx="6" fill="#1e293b"/>
+  <text x="471" y="412" font-family="'Inter', Arial, sans-serif" font-size="9" fill="#94a3b8">Autoriser les notifications</text>
+  <rect x="590" y="397" width="30" height="16" rx="8" fill="#374151"/>
+  <circle cx="598" cy="405" r="6" fill="#6b7280"/>
+  <!-- small text -->
+  <text x="462" y="434" font-family="'Inter', Arial, sans-serif" font-size="8" fill="#475569">45–60% désactivent dans les 30 jours</text>
+  <text x="462" y="450" font-family="'Inter', Arial, sans-serif" font-size="8" fill="#475569">iOS : opt-in 2 étapes via PWA uniquement</text>
+  <text x="462" y="462" font-family="'Inter', Arial, sans-serif" font-size="8" fill="#475569">Adoption quasi nulle pour boutiques Shopify</text>
+
+  <!-- Phone home bar -->
+  <rect x="500" y="472" width="90" height="4" rx="2" fill="#334155"/>
+
+  <!-- ─── RIGHT SECTION : analyse & comparaison ─── -->
+
+  <!-- Section label -->
+  <text x="700" y="90" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="14" fill="#64748b" letter-spacing="1">PORTÉE RÉELLE SUR 1 000 VISITEURS</text>
+
+  <!-- Funnel visuel — 1000 visiteurs abandonnent -->
+  <g filter="url(#cardShadow)">
+    <rect x="700" y="104" width="420" height="82" rx="10" fill="url(#statCard)" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <rect x="700" y="104" width="4" height="82" rx="2" fill="url(#cyanGrad)"/>
+  <text x="716" y="128" font-family="'Inter', Arial, sans-serif" font-weight="700" font-size="13" fill="#f1f5f9">1 000 visiteurs abandonnent leur panier</text>
+  <!-- Barre de couverture push -->
+  <rect x="716" y="138" width="384" height="14" rx="7" fill="#1e293b"/>
+  <rect x="716" y="138" width="19" height="14" rx="7" fill="url(#cyanGrad)" filter="url(#glowCyan)"/>
+  <text x="716" y="170" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#06b6d4" font-weight="600">10–50 avec push activé (1–5%)</text>
+  <text x="940" y="170" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#475569">950–990 sans opt-in</text>
+
+  <!-- Comparaison canaux — 3 lignes -->
+  <g filter="url(#cardShadow)">
+    <rect x="700" y="200" width="420" height="200" rx="10" fill="url(#statCard)" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <text x="716" y="226" font-family="'Inter', Arial, sans-serif" font-weight="700" font-size="13" fill="#94a3b8" letter-spacing="0.5">COMPARAISON CANAUX DE RELANCE</text>
+
+  <!-- Ligne push web -->
+  <rect x="716" y="236" width="384" height="42" rx="6" fill="#0f172a" opacity="0.6"/>
+  <text x="726" y="254" font-family="'Inter', Arial, sans-serif" font-weight="700" font-size="12" fill="#f1f5f9">Push web</text>
+  <text x="726" y="270" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#64748b">Opt-in : 1–5% · Ouverture : 7–12% · Coût : quasi nul</text>
+  <rect x="990" y="240" width="100" height="28" rx="6" fill="#06b6d4" opacity="0.15" stroke="#06b6d4" stroke-width="1"/>
+  <text x="1040" y="258" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="10" font-weight="700" fill="#06b6d4">Gratuit</text>
+
+  <!-- Ligne email -->
+  <rect x="716" y="284" width="384" height="42" rx="6" fill="#0f172a" opacity="0.6"/>
+  <text x="726" y="302" font-family="'Inter', Arial, sans-serif" font-weight="700" font-size="12" fill="#f1f5f9">Email</text>
+  <text x="726" y="318" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#64748b">Opt-in : 30–50% base · Ouverture : 20–25% réel</text>
+  <rect x="990" y="288" width="100" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="1040" y="306" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="10" font-weight="700" fill="#94a3b8">Moyen</text>
+
+  <!-- Ligne courrier -->
+  <rect x="716" y="332" width="384" height="42" rx="6" fill="#0f172a" opacity="0.6"/>
+  <text x="726" y="350" font-family="'Inter', Arial, sans-serif" font-weight="700" font-size="12" fill="#f1f5f9">Carte postale</text>
+  <text x="726" y="366" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#64748b">Opt-in : aucun requis · Ouverture : 91%</text>
+  <rect x="990" y="336" width="100" height="28" rx="6" fill="#06b6d4" opacity="0.9"/>
+  <text x="1040" y="354" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="10" font-weight="700" fill="#0f172a">Sans opt-in</text>
+
+  <!-- iOS warning box -->
+  <g filter="url(#cardShadow)">
+    <rect x="700" y="416" width="420" height="74" rx="10" fill="#1a0f2e" stroke="#8b5cf6" stroke-width="1.5"/>
+  </g>
+  <rect x="700" y="416" width="4" height="74" rx="2" fill="#8b5cf6"/>
+  <text x="718" y="440" font-family="'Inter', Arial, sans-serif" font-weight="700" font-size="12" fill="#a78bfa">iOS 16.4 : disponible, mais adoption quasi nulle</text>
+  <text x="718" y="458" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#7c6fcd">2 étapes d'opt-in (PWA) · 57% du marché mobile FR</text>
+  <text x="718" y="474" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#7c6fcd">exclu jusqu'à iOS 16.4 — et toujours difficile à atteindre</text>
+
+  <!-- Paradox box -->
+  <g filter="url(#cardShadow)">
+    <rect x="700" y="504" width="420" height="68" rx="10" fill="url(#statCard)" stroke="#f59e0b" stroke-width="1"/>
+  </g>
+  <rect x="700" y="504" width="4" height="68" rx="2" fill="#f59e0b"/>
+  <text x="718" y="526" font-family="'Inter', Arial, sans-serif" font-weight="700" font-size="12" fill="#fbbf24">Paradoxe : la fenêtre idéale (&lt;30 min) est aussi la</text>
+  <text x="718" y="542" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#94a3b8">plus risquée — 60% des abandons précoces sont involontaires.</text>
+  <text x="718" y="558" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#94a3b8">Relancer trop tôt grille le canal avant le retour spontané.</text>
+
+  <!-- ─── BOTTOM BAR : branding ─── -->
+  <rect x="0" y="592" width="1200" height="38" fill="#070f1c" opacity="0.95"/>
+
+  <!-- postcart.app logo -->
+  <circle cx="36" cy="611" r="12" fill="#06b6d4" opacity="0.15"/>
+  <circle cx="36" cy="611" r="8" fill="#06b6d4"/>
+  <text x="36" y="615" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9" font-weight="700" fill="#ffffff">p</text>
+  <text x="54" y="609" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="13" fill="#f8fafc">postcart</text>
+  <text x="110" y="609" font-family="'Inter', Arial, sans-serif" font-size="13" fill="#06b6d4">.app</text>
+
+  <!-- Tagline bottom -->
+  <text x="54" y="622" font-family="'Inter', Arial, sans-serif" font-size="10" fill="#475569">Relance panier par carte postale — sans opt-in, 91% d'ouverture</text>
+
+  <!-- Right CTA badge -->
+  <rect x="1010" y="597" width="170" height="26" rx="5" fill="#06b6d4" opacity="0.12" stroke="#06b6d4" stroke-width="1"/>
+  <text x="1095" y="614" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="11" font-weight="600" fill="#06b6d4">15 cartes offertes →</text>
+
+</svg>
