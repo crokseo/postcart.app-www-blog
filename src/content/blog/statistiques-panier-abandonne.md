@@ -196,10 +196,9 @@ Pas d'algorithme iOS qui filtre la livraison. Pas de dossier spam. Pas de désab
 Ces chiffres montrent l'ampleur réelle du problème. Ils montrent aussi qu'une part non négligeable des abandons est structurellement hors de portée à court terme — et que les canaux les plus courants, utilisés sans séquence, récupèrent moins de 10 % de ce qui est récupérable. La question qui reste ouverte : quelle combinaison de canaux, dans quel timing, pour quel profil client ? C'est ce que couvre notre [guide complet sur la relance de panier abandonné](/blog/relance-panier-abandonne-guide-complet) — avec des séquences testées sur des boutiques Shopify en 2026.
 
 <div class="pc-cta-block pc-cta-block--final">
-  <div class="pc-cta-block__eyebrow">Bientôt disponible</div>
-  <p class="pc-cta-block__title">Envoyez vos 15 premières cartes postales. Gratuitement.</p>
-  <p class="pc-cta-block__sub">Pendant que vos concurrents saturent les boîtes mails de vos clients communs, une carte postale physique les attend dans leur boîte aux lettres. Personnalisée. Automatisée. Et ouverte à 90 %.</p>
-  <a href="#" class="pc-cta-btn pc-cta-btn--white">Accéder à l'application →</a>
+  <p class="pc-cta-block__title">Récupérez vos paniers abandonnés avec un canal à 90 % d'ouverture.</p>
+  <p class="pc-cta-block__sub">Envoyez vos 15 premières cartes postales gratuitement. Sans engagement, sans carte bancaire.</p>
+  <a href="#" class="pc-cta-btn pc-cta-btn--orange">Accéder à l'application →</a>
   <div class="pc-cta-trust">
     <span class="pc-cta-trust-item">Sans engagement</span>
     <span class="pc-cta-trust-item">Support français</span>
