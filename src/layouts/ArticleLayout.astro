@@ -65,6 +65,38 @@ const {
     </div>
   </div>
 
+  <div class="pc-dotted-sep" aria-hidden="true"></div>
+
+  <div class="pc-container">
+    <div class="pc-author-block">
+      <img
+        src="https://www.crokseo.com/wp-content/uploads/2025/12/Eric-Kolmerschlag.jpg.webp"
+        alt="Éric Kolmerschlag"
+        class="pc-author-avatar"
+        width="80"
+        height="80"
+      />
+      <div class="pc-author-info">
+        <div class="pc-author-name">Éric Kolmerschlag</div>
+        <div class="pc-author-title">Consultant senior en webmarketing</div>
+        <p class="pc-author-bio">
+          Éric accompagne les e-commerçants depuis plus de 15 ans sur leurs stratégies d'acquisition et de conversion.
+          Il partage ses analyses et méthodes sur <a href="https://www.crokseo.com" target="_blank" rel="noopener">Crokseo.com</a>,
+          sa <span class="pc-author-link-js" role="link" tabindex="0" data-url="https://www.youtube.com/@crokseo">chaîne YouTube</span>
+          et <span class="pc-author-link-js" role="link" tabindex="0" data-url="https://www.linkedin.com/in/eric-kolmerschlag-3a2903135/">LinkedIn</span>,
+          et est associé de la marque <a href="https://ascenbio-thes.com/" target="_blank" rel="noopener">Ascenbio Thé</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.pc-author-link-js').forEach(el => {
+      el.addEventListener('click', () => window.open((el as HTMLElement).dataset.url, '_blank'));
+      el.addEventListener('keydown', (e) => { if ((e as KeyboardEvent).key === 'Enter') window.open((el as HTMLElement).dataset.url, '_blank'); });
+    });
+  </script>
+
   {(prev || next) && (
     <>
       <div class="pc-dotted-sep" aria-hidden="true"></div>
