@@ -69,6 +69,18 @@ readingTime: "8 min de lecture"
 
 <p>Ce tableau ne dit pas que le retargeting Meta est mort. Il dit que ses fondations ont bougé — et que continuer à piloter comme en 2020 revient à conduire avec un rétroviseur cassé.</p>
 
+<div class="pc-cta-block pc-cta-block--app">
+  <div class="pc-cta-block__eyebrow">Shopify · Installation gratuite</div>
+  <p class="pc-cta-block__title">Pour les 40–50 % que le pixel Meta ne voit plus.</p>
+  <p class="pc-cta-block__sub">PostCart envoie une carte postale physique aux clients que le retargeting n'atteint plus — sans pixel, sans cookie, sans consentement digital. 91 % d'ouverture garantie.</p>
+  <a href="#" class="pc-cta-btn pc-cta-btn--orange">Découvrir PostCart pour Shopify →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">15 cartes offertes pour tester</span>
+    <span class="pc-cta-trust-item">Installation gratuite</span>
+    <span class="pc-cta-trust-item">Compatible toutes boutiques Shopify</span>
+  </div>
+</div>
+
 <h2>Ce qui fonctionne encore : le retargeting contextuel vs le retargeting de poursuite</h2>
 
 <p>La distinction que peu d'annonceurs font — et qui détermine pourtant l'essentiel de la performance — c'est celle entre <strong>retargeting contextuel</strong> et <strong>retargeting de poursuite</strong>.</p>
@@ -161,6 +173,18 @@ readingTime: "8 min de lecture"
 
 <p>La carte postale physique mérite une mention particulière pour les segments premium. Là où le retargeting agressif crée une dissonance avec le positionnement haut de gamme, un courrier soigné — beau papier, message personnalisé, offre exclusive — renforce le positionnement au lieu de le dégrader. C'est le canal le moins saturé du parcours client en 2026, et celui dont le taux de mémorisation est le plus élevé.</p>
 
+<div class="pc-cta-block pc-cta-block--sim">
+  <div class="pc-cta-block__eyebrow">Outil gratuit</div>
+  <p class="pc-cta-block__title">Combien représente l'angle mort de votre retargeting en euros ?</p>
+  <p class="pc-cta-block__sub">Le simulateur calcule le CA total perdu sur vos paniers abandonnés — pas seulement les 50–60 % que le pixel capture. Résultat en 30 secondes.</p>
+  <a href="/simulateur/" class="pc-cta-btn pc-cta-btn--blue">Calculer mon manque à gagner →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">Gratuit</span>
+    <span class="pc-cta-trust-item">Sans inscription</span>
+    <span class="pc-cta-trust-item">Résultat en 30 secondes</span>
+  </div>
+</div>
+
 <h2>Plan d'action : calibrer votre retargeting panier en 2026</h2>
 
 <p>Plutôt qu'une liste de bonnes pratiques génériques, voici les quatre décisions structurelles à prendre :</p>
@@ -177,3 +201,14 @@ readingTime: "8 min de lecture"
 <p>Le retargeting publicitaire reste un canal utile — mais il ne couvre plus l'ensemble de vos paniers abandonnés, et son coût a presque doublé en cinq ans. Pour les segments que ni le pixel Meta, ni Google Display, ni Shopify Audiences ne peuvent atteindre, la relance physique n'est plus une option de niche : c'est souvent la seule option viable.</p>
 
 <p><strong>Pour les segments inatteignables par le retargeting, testez postcart gratuitement — 15 cartes offertes.</strong></p>
+
+<div class="pc-cta-block pc-cta-block--final">
+  <p class="pc-cta-block__title">Récupérez vos paniers abandonnés avec un canal à 90 % d'ouverture.</p>
+  <p class="pc-cta-block__sub">Envoyez vos 15 premières cartes postales gratuitement. Sans engagement, sans carte bancaire.</p>
+  <a href="#" class="pc-cta-btn pc-cta-btn--orange">Accéder à l'application →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">Sans engagement</span>
+    <span class="pc-cta-trust-item">Support français</span>
+    <span class="pc-cta-trust-item">ROI mesurable dès la première campagne</span>
+  </div>
+</div>

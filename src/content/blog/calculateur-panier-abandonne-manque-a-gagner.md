@@ -39,6 +39,18 @@ Pourquoi cette formule et pas simplement "CA × taux d'abandon" ? Parce que votr
 
 Oui. 70 000€. Pour une boutique qui fait 30K de CA mensuel. Ces chiffres ne sont pas une erreur — ils illustrent la réalité mathématique de l'abandon de panier dans le e-commerce.
 
+<div class="pc-cta-block pc-cta-block--sim">
+  <div class="pc-cta-block__eyebrow">Outil gratuit</div>
+  <p class="pc-cta-block__title">Calculez votre manque à gagner exact en 30 secondes.</p>
+  <p class="pc-cta-block__sub">Entrez votre CA mensuel et votre taux d'abandon : le simulateur applique la formule correcte et vous donne le CA récupérable immédiatement.</p>
+  <a href="/simulateur/" class="pc-cta-btn pc-cta-btn--blue">Calculer mon manque à gagner →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">Gratuit</span>
+    <span class="pc-cta-trust-item">Sans inscription</span>
+    <span class="pc-cta-trust-item">Résultat en 30 secondes</span>
+  </div>
+</div>
+
 ## Les 3 variables qui font toute la différence
 
 Trois paramètres déterminent l'ampleur de votre perte. Chacun a un impact distinct.
@@ -119,6 +131,18 @@ Voici ce que ça signifie concrètement : **un taux de récupération de 5% sur 
 
 Pour aller plus loin dans l'analyse de la rentabilité d'une campagne de relance, le [calculateur ROI postcart](/blog/calculateur-roi-relance-panier-postcart) vous permet de projeter précisément le retour sur investissement selon votre volume de paniers et votre panier moyen.
 
+<div class="pc-cta-block pc-cta-block--app">
+  <div class="pc-cta-block__eyebrow">Shopify · Installation gratuite</div>
+  <p class="pc-cta-block__title">Passez de la perte calculée à la vente récupérée.</p>
+  <p class="pc-cta-block__sub">PostCart automatise l'envoi de cartes postales physiques à vos clients Shopify qui ont abandonné leur panier — le canal à 91 % d'ouverture qui complète votre séquence email.</p>
+  <a href="#" class="pc-cta-btn pc-cta-btn--orange">Découvrir PostCart pour Shopify →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">15 cartes offertes pour tester</span>
+    <span class="pc-cta-trust-item">Installation gratuite</span>
+    <span class="pc-cta-trust-item">Compatible toutes boutiques Shopify</span>
+  </div>
+</div>
+
 ### Pourquoi la carte postale physique change les taux de récupération
 
 Les emails de relance sont saturés. Les taux d'ouverture moyen des relances panier par email tournent autour de 40-45% (Klaviyo, 2024) — ce qui signifie que 55 à 60% des destinataires ne voient même pas le message. Les SMS sont perçus comme intrusifs par une fraction croissante des acheteurs.
@@ -126,3 +150,14 @@ Les emails de relance sont saturés. Les taux d'ouverture moyen des relances pan
 La carte postale physique fonctionne sur un registre différent : elle passe dans la boîte aux lettres, elle est touchée, elle reste visible plusieurs jours. Son taux de mémorisation dépasse largement celui des canaux digitaux. C'est précisément pour ça que postcart.app automatise l'envoi de cartes postales personnalisées pour les paniers Shopify abandonnés — avec un déclenchement automatique, sans intervention manuelle.
 
 Si vous n'avez pas encore mis en place de relance pour vos paniers abandonnés, c'est probablement la décision à rendement le plus rapide que vous pouvez prendre aujourd'hui. [Essayez postcart gratuitement](https://postcart.app) et voyez combien de paniers votre boutique récupère dans les 30 premiers jours.
+
+<div class="pc-cta-block pc-cta-block--final">
+  <p class="pc-cta-block__title">Récupérez vos paniers abandonnés avec un canal à 90 % d'ouverture.</p>
+  <p class="pc-cta-block__sub">Envoyez vos 15 premières cartes postales gratuitement. Sans engagement, sans carte bancaire.</p>
+  <a href="#" class="pc-cta-btn pc-cta-btn--orange">Accéder à l'application →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">Sans engagement</span>
+    <span class="pc-cta-trust-item">Support français</span>
+    <span class="pc-cta-trust-item">ROI mesurable dès la première campagne</span>
+  </div>
+</div>

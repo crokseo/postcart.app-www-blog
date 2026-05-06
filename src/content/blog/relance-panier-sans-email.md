@@ -47,6 +47,18 @@ readingTime: "8 min de lecture"
 
 <p>C'est le cas le plus répandu. L'email arrive, mais il atterrit dans l'onglet "Promotions", dans les spams, ou dans une boîte que votre client ne consulte plus. Le taux d'ouverture réel peut être bien inférieur aux 39-50 % affichés dans Klaviyo. Dans ce cas, l'email n'est pas "manquant" : il est simplement inefficace sur ce segment.</p>
 
+<div class="pc-cta-block pc-cta-block--app">
+  <div class="pc-cta-block__eyebrow">Shopify · Installation gratuite</div>
+  <p class="pc-cta-block__title">Le seul canal de relance qui fonctionne sans email et sans opt-in.</p>
+  <p class="pc-cta-block__sub">Guest checkout, hard bounce ou email ignoré — PostCart atteint vos clients via leur boîte aux lettres physique. 70 % de correspondance email/adresse postale, 91 % d'ouverture.</p>
+  <a href="#" class="pc-cta-btn pc-cta-btn--orange">Découvrir PostCart pour Shopify →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">15 cartes offertes pour tester</span>
+    <span class="pc-cta-trust-item">Installation gratuite</span>
+    <span class="pc-cta-trust-item">Compatible toutes boutiques Shopify</span>
+  </div>
+</div>
+
 <h2>SMS de relance : puissant, mais conditionnel</h2>
 
 <p>Le SMS a un taux d'ouverture mesuré autour de 30 % — supérieur à l'email dans les faits si on compare des audiences comparables. Mais son efficacité dépend d'une condition préalable que beaucoup oublient.</p>
@@ -162,6 +174,18 @@ readingTime: "8 min de lecture"
   </tbody>
 </table>
 
+<div class="pc-cta-block pc-cta-block--sim">
+  <div class="pc-cta-block__eyebrow">Outil gratuit</div>
+  <p class="pc-cta-block__title">Combien de paniers abandonnés partent sans que vous puissiez les relancer ?</p>
+  <p class="pc-cta-block__sub">Le simulateur chiffre votre manque à gagner global — y compris les guests et les bounces que votre séquence email ne touche jamais.</p>
+  <a href="/simulateur/" class="pc-cta-btn pc-cta-btn--blue">Calculer mon manque à gagner →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">Gratuit</span>
+    <span class="pc-cta-trust-item">Sans inscription</span>
+    <span class="pc-cta-trust-item">Résultat en 30 secondes</span>
+  </div>
+</div>
+
 <h2>La relance sans email n'est pas une impasse</h2>
 
 <p>L'email restera encore longtemps le canal de relance par défaut. Mais partir du principe qu'il couvre l'intégralité de votre base clients est une erreur stratégique. Entre les guests, les bounces et les emails non ouverts, une partie non négligeable de vos paniers abandonnés les plus récents est inatteignable par les seuls canaux digitaux.</p>
@@ -169,3 +193,14 @@ readingTime: "8 min de lecture"
 <p>La carte postale est le seul canal qui peut atteindre ces clients sans dépendre d'un opt-in digital — en utilisant l'email uniquement comme identifiant pour retrouver l'adresse physique. C'est une logique différente. Et c'est précisément ce que vos concurrents n'ont pas encore adopté.</p>
 
 <p><strong>Testez postcart gratuitement — 15 cartes offertes pour mesurer votre taux de correspondance et votre ROAS réel sur vos paniers abandonnés récents.</strong></p>
+
+<div class="pc-cta-block pc-cta-block--final">
+  <p class="pc-cta-block__title">Récupérez vos paniers abandonnés avec un canal à 90 % d'ouverture.</p>
+  <p class="pc-cta-block__sub">Envoyez vos 15 premières cartes postales gratuitement. Sans engagement, sans carte bancaire.</p>
+  <a href="#" class="pc-cta-btn pc-cta-btn--orange">Accéder à l'application →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">Sans engagement</span>
+    <span class="pc-cta-trust-item">Support français</span>
+    <span class="pc-cta-trust-item">ROI mesurable dès la première campagne</span>
+  </div>
+</div>

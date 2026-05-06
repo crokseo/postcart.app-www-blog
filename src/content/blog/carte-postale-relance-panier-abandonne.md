@@ -83,6 +83,18 @@ readingTime: "12 min de lecture"
   </tbody>
 </table>
 
+<div class="pc-cta-block pc-cta-block--app">
+  <div class="pc-cta-block__eyebrow">Shopify · Installation gratuite</div>
+  <p class="pc-cta-block__title">91 % d'ouverture. Zéro filtre spam. Zéro opt-in requis.</p>
+  <p class="pc-cta-block__sub">PostCart connecte votre boutique Shopify à l'impression et l'envoi automatique de cartes postales personnalisées — déclenché à chaque abandon panier, sans action manuelle.</p>
+  <a href="#" class="pc-cta-btn pc-cta-btn--orange">Découvrir PostCart pour Shopify →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">15 cartes offertes pour tester</span>
+    <span class="pc-cta-trust-item">Installation gratuite</span>
+    <span class="pc-cta-trust-item">Compatible toutes boutiques Shopify</span>
+  </div>
+</div>
+
 <h2>Ce qui se passe vraiment dans la tête de votre client quand une carte arrive</h2>
 
 <p>Avant de parler chiffres, il faut comprendre le mécanisme. Parce que la <strong>relance physique e-commerce</strong> ne fonctionne pas pour les raisons qu'on croit instinctivement.</p>
@@ -130,6 +142,18 @@ readingTime: "12 min de lecture"
 <p>La plateforme Poplar mesure sur ses campagnes un <strong>ROAS incrémental de 4 à 6x</strong> pour la relance panier par courrier. "Incrémental" : c'est le gain net du canal physique en plus de ce que la séquence email aurait récupéré sans lui.</p>
 
 <p>Cette distinction est importante. Si vous mesurez le ROAS total de votre séquence combinée email + courrier, vous ne savez pas ce que le courrier apporte réellement. Le ROAS incrémental mesure uniquement les conversions qui n'auraient pas eu lieu sans la carte postale. C'est la vraie métrique pour évaluer l'apport du canal.</p>
+
+<div class="pc-cta-block pc-cta-block--sim">
+  <div class="pc-cta-block__eyebrow">Outil gratuit</div>
+  <p class="pc-cta-block__title">Estimez le ROAS d'une campagne de cartes postales pour votre boutique.</p>
+  <p class="pc-cta-block__sub">Entrez votre CA mensuel et votre taux d'abandon : le simulateur calcule combien vous pourriez récupérer avec un taux de récupération de 8 %.</p>
+  <a href="/simulateur/" class="pc-cta-btn pc-cta-btn--blue">Calculer mon manque à gagner →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">Gratuit</span>
+    <span class="pc-cta-trust-item">Sans inscription</span>
+    <span class="pc-cta-trust-item">Résultat en 30 secondes</span>
+  </div>
+</div>
 
 <h2>Comment ça fonctionne, de l'abandon au clic sur le QR code</h2>
 
@@ -247,3 +271,14 @@ readingTime: "12 min de lecture"
 <p>La question n'est pas de savoir si vous devriez tester la carte postale de relance. C'est de savoir combien de paniers supplémentaires vos concurrents vont récupérer pendant que vous finissez d'y réfléchir.</p>
 
 <p><strong>Testez postcart gratuitement — 15 cartes offertes pour mesurer votre ROAS réel.</strong></p>
+
+<div class="pc-cta-block pc-cta-block--final">
+  <p class="pc-cta-block__title">Récupérez vos paniers abandonnés avec un canal à 90 % d'ouverture.</p>
+  <p class="pc-cta-block__sub">Envoyez vos 15 premières cartes postales gratuitement. Sans engagement, sans carte bancaire.</p>
+  <a href="#" class="pc-cta-btn pc-cta-btn--orange">Accéder à l'application →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">Sans engagement</span>
+    <span class="pc-cta-trust-item">Support français</span>
+    <span class="pc-cta-trust-item">ROI mesurable dès la première campagne</span>
+  </div>
+</div>

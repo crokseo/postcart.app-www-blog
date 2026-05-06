@@ -119,6 +119,18 @@ readingTime: "6 min de lecture"
   </tbody>
 </table>
 
+<div class="pc-cta-block pc-cta-block--app">
+  <div class="pc-cta-block__eyebrow">Shopify · Installation gratuite</div>
+  <p class="pc-cta-block__title">Disponible dès aujourd'hui, sans BSP ni approbation Meta.</p>
+  <p class="pc-cta-block__sub">Là où WhatsApp demande 2–4 semaines de setup et 500 € de frais, PostCart connecte votre Shopify en 10 minutes — sans opt-in, 100 % de vos clients avec adresse de livraison.</p>
+  <a href="#" class="pc-cta-btn pc-cta-btn--orange">Découvrir PostCart pour Shopify →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">15 cartes offertes pour tester</span>
+    <span class="pc-cta-trust-item">Installation gratuite</span>
+    <span class="pc-cta-trust-item">Compatible toutes boutiques Shopify</span>
+  </div>
+</div>
+
 <h2>Pour qui WhatsApp a-t-il vraiment du sens en relance panier ?</h2>
 
 <p>Soyons honnêtes : WhatsApp peut être un canal de relance pertinent dans des conditions très précises.</p>
@@ -153,6 +165,18 @@ readingTime: "6 min de lecture"
 
 <p>Pas de double opt-in, pas de BSP, pas d'approbation de template. L'adresse postale est déjà là, dans votre CRM Shopify, pour chaque client qui a renseigné son adresse de livraison — qu'il ait finalisé son achat ou non.</p>
 
+<div class="pc-cta-block pc-cta-block--sim">
+  <div class="pc-cta-block__eyebrow">Outil gratuit</div>
+  <p class="pc-cta-block__title">Pendant que WhatsApp n'est pas prêt, mesurez ce que vous perdez.</p>
+  <p class="pc-cta-block__sub">Le simulateur calcule votre manque à gagner mensuel sur l'ensemble de vos paniers abandonnés — pour savoir combien vaut la mise en place rapide d'un canal alternatif.</p>
+  <a href="/simulateur/" class="pc-cta-btn pc-cta-btn--blue">Calculer mon manque à gagner →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">Gratuit</span>
+    <span class="pc-cta-trust-item">Sans inscription</span>
+    <span class="pc-cta-trust-item">Résultat en 30 secondes</span>
+  </div>
+</div>
+
 <h2>Ce que cela signifie concrètement pour votre stratégie de relance</h2>
 
 <p>La relance panier WhatsApp est une promesse séduisante sur le papier — 98 % d'ouverture, format conversationnel, présence massive en France. Mais derrière ce chiffre se cachent trois réalités que les plateformes marketing ne mentionnent pas :</p>
@@ -168,3 +192,14 @@ readingTime: "6 min de lecture"
 <p style="margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%); border-left: 4px solid #6c63ff; border-radius: 8px;">
   <strong style="color: #a78bfa;">En attendant d'avoir la taille requise pour WhatsApp Business API</strong>, testez postcart gratuitement — <strong>15 cartes offertes</strong> pour le même niveau de personnalisation : produit, prénom, QR code de retour panier. Aucun opt-in digital requis. Votre client n'a qu'à lire.
 </p>
+
+<div class="pc-cta-block pc-cta-block--final">
+  <p class="pc-cta-block__title">Récupérez vos paniers abandonnés avec un canal à 90 % d'ouverture.</p>
+  <p class="pc-cta-block__sub">Envoyez vos 15 premières cartes postales gratuitement. Sans engagement, sans carte bancaire.</p>
+  <a href="#" class="pc-cta-btn pc-cta-btn--orange">Accéder à l'application →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">Sans engagement</span>
+    <span class="pc-cta-trust-item">Support français</span>
+    <span class="pc-cta-trust-item">ROI mesurable dès la première campagne</span>
+  </div>
+</div>

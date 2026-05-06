@@ -41,6 +41,18 @@ readingTime: "10 min de lecture"
 
 <p>Ce n'est pas une raison de renoncer à l'email. C'est une raison de ne pas en surestimer l'efficacité mesurée, et de compléter avec des canaux dont la mesure est moins biaisée. Le taux de clic (CTR) reste une métrique fiable — il implique une action humaine. Le taux d'ouverture, de moins en moins.</p>
 
+<div class="pc-cta-block pc-cta-block--app">
+  <div class="pc-cta-block__eyebrow">Shopify · Installation gratuite</div>
+  <p class="pc-cta-block__title">L'email a des angles morts. La carte postale les comble.</p>
+  <p class="pc-cta-block__sub">PostCart envoie automatiquement une carte postale physique à J+10, sur les clients que votre séquence Klaviyo n'a pas convertis — 91 % d'ouverture, sans opt-in requis.</p>
+  <a href="#" class="pc-cta-btn pc-cta-btn--orange">Découvrir PostCart pour Shopify →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">15 cartes offertes pour tester</span>
+    <span class="pc-cta-trust-item">Installation gratuite</span>
+    <span class="pc-cta-trust-item">Compatible toutes boutiques Shopify</span>
+  </div>
+</div>
+
 <h2>La séquence email en 3 actes</h2>
 
 <p>La séquence standard en e-commerce comprend 3 emails. Selon Omnisend, une séquence de 3 emails génère <strong>63 % de revenus supplémentaires</strong> par rapport à un seul email de relance. Le timing et le ton de chaque email ont une logique propre.</p>
@@ -121,6 +133,18 @@ readingTime: "10 min de lecture"
 
 <p>Au-delà du 3e email, les taux d'ouverture chutent à moins de 15 %, et le risque de plaintes spam augmente. La limite de 3 emails correspond à une réalité : au-delà, vous dégradez votre réputation d'expéditeur plus que vous ne récupérez des ventes. Les algorithmes de Gmail et Apple Mail apprennent de ces signaux.</p>
 
+<div class="pc-cta-block pc-cta-block--sim">
+  <div class="pc-cta-block__eyebrow">Outil gratuit</div>
+  <p class="pc-cta-block__title">Quantifiez ce que vos 92 % de paniers non récupérés vous coûtent.</p>
+  <p class="pc-cta-block__sub">L'email récupère 5–8 % des paniers. Le simulateur calcule ce que représente le reste en euros perdus chaque mois — pour votre boutique spécifiquement.</p>
+  <a href="/simulateur/" class="pc-cta-btn pc-cta-btn--blue">Calculer mon manque à gagner →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">Gratuit</span>
+    <span class="pc-cta-trust-item">Sans inscription</span>
+    <span class="pc-cta-trust-item">Résultat en 30 secondes</span>
+  </div>
+</div>
+
 <h2>Quand compléter avec un autre canal</h2>
 
 <p>L'email bien configuré récupère une partie de vos paniers. Le moment où un deuxième canal entre en jeu, c'est J+10 — quand votre séquence email est terminée et que les clients non convertis sont statistiquement inatteignables par email.</p>
@@ -142,3 +166,14 @@ readingTime: "10 min de lecture"
 <p>Mais 92 à 95 % de vos paniers resteront perdus si vous comptez uniquement sur l'email. Pas parce que vous faites quelque chose de mal. Parce que l'email a des angles morts structurels — les guests sans opt-in, les boîtes mail saturées, les filtres iOS, le segment qui a ouvert mais ne reviendra pas. Ces angles morts sont exactement là où un canal physique récupère des conversions supplémentaires sans investissement technique majeur.</p>
 
 <p><strong>Découvrez comment compléter votre séquence email avec un canal à 91 % d'ouverture — testez postcart gratuitement avec 15 cartes offertes.</strong></p>
+
+<div class="pc-cta-block pc-cta-block--final">
+  <p class="pc-cta-block__title">Récupérez vos paniers abandonnés avec un canal à 90 % d'ouverture.</p>
+  <p class="pc-cta-block__sub">Envoyez vos 15 premières cartes postales gratuitement. Sans engagement, sans carte bancaire.</p>
+  <a href="#" class="pc-cta-btn pc-cta-btn--orange">Accéder à l'application →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">Sans engagement</span>
+    <span class="pc-cta-trust-item">Support français</span>
+    <span class="pc-cta-trust-item">ROI mesurable dès la première campagne</span>
+  </div>
+</div>

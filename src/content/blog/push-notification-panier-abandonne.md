@@ -79,6 +79,18 @@ readingTime: "6 min de lecture"
 
 <p>Pour une boutique Shopify standard sans application mobile dédiée, seul le <strong>push web</strong> est accessible. Et c'est là que le problème de couverture devient critique.</p>
 
+<div class="pc-cta-block pc-cta-block--app">
+  <div class="pc-cta-block__eyebrow">Shopify · Installation gratuite</div>
+  <p class="pc-cta-block__title">Pour les 95–99 % de visiteurs que le push n'atteindra jamais.</p>
+  <p class="pc-cta-block__sub">PostCart envoie une carte postale physique à vos clients Shopify sans aucun opt-in digital requis — 91 % d'ouverture, là où le push web ne touche qu'1 à 5 % de votre base.</p>
+  <a href="#" class="pc-cta-btn pc-cta-btn--orange">Découvrir PostCart pour Shopify →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">15 cartes offertes pour tester</span>
+    <span class="pc-cta-trust-item">Installation gratuite</span>
+    <span class="pc-cta-trust-item">Compatible toutes boutiques Shopify</span>
+  </div>
+</div>
+
 <h2>Le taux d'opt-in push : le chiffre que les plateformes préfèrent minimiser</h2>
 
 <p>Les outils de web push marketing (PushOwl, OneSignal, Klaviyo Web Push) affichent volontiers leurs taux d'ouverture de 7 à 12 % en les comparant favorablement à l'email. Ce qu'ils ne mettent pas en avant, c'est le dénominateur de ce calcul.</p>
@@ -142,6 +154,18 @@ readingTime: "6 min de lecture"
 
 <p>Dans ces conditions, un push bien ciblé peut délivrer un ROI positif sur la courte fenêtre où il est efficace. Le problème est qu'il laisse sans solution les 95 à 99 % de visiteurs qui n'ont pas activé vos notifications.</p>
 
+<div class="pc-cta-block pc-cta-block--sim">
+  <div class="pc-cta-block__eyebrow">Outil gratuit</div>
+  <p class="pc-cta-block__title">Combien vaut le 1 % de visiteurs que votre push ne touche pas ?</p>
+  <p class="pc-cta-block__sub">Le simulateur calcule le CA perdu sur l'ensemble de vos paniers abandonnés — pas seulement ceux que le push atteint. Résultat en 30 secondes.</p>
+  <a href="/simulateur/" class="pc-cta-btn pc-cta-btn--blue">Calculer mon manque à gagner →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">Gratuit</span>
+    <span class="pc-cta-trust-item">Sans inscription</span>
+    <span class="pc-cta-trust-item">Résultat en 30 secondes</span>
+  </div>
+</div>
+
 <h2>La question que chaque marchand doit se poser</h2>
 
 <p>Après avoir lu ces données, la vraie question n'est pas "faut-il activer le push ?" mais : <strong>"Que faites-vous pour les visiteurs qui n'ont pas activé vos push ?"</strong></p>
@@ -171,4 +195,15 @@ readingTime: "6 min de lecture"
   <p style="margin:0 0 8px 0;font-weight:700;font-size:1.05em;color:#f8fafc;">Pour les visiteurs qui n'ont pas activé vos push, testez postcart gratuitement — 15 cartes offertes.</p>
   <p style="margin:0 0 16px 0;color:#94a3b8;">Une carte postale physique, sans consentement digital requis, avec 91 % d'ouverture garantie. Aucun opt-in, aucune désactivation possible.</p>
   <a href="https://postcart.app" style="display:inline-block;background:#06b6d4;color:#0f172a;font-weight:700;padding:12px 24px;border-radius:8px;text-decoration:none;">Commencer gratuitement →</a>
+</div>
+
+<div class="pc-cta-block pc-cta-block--final">
+  <p class="pc-cta-block__title">Récupérez vos paniers abandonnés avec un canal à 90 % d'ouverture.</p>
+  <p class="pc-cta-block__sub">Envoyez vos 15 premières cartes postales gratuitement. Sans engagement, sans carte bancaire.</p>
+  <a href="#" class="pc-cta-btn pc-cta-btn--orange">Accéder à l'application →</a>
+  <div class="pc-cta-trust">
+    <span class="pc-cta-trust-item">Sans engagement</span>
+    <span class="pc-cta-trust-item">Support français</span>
+    <span class="pc-cta-trust-item">ROI mesurable dès la première campagne</span>
+  </div>
 </div>
