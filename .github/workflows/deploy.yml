@@ -53,3 +53,13 @@ jobs:
           local-dir: ./dist/_astro/
           server-dir: ./postcart.app_www/_astro/
           dangerous-clean-slate: true
+
+      - name: Deploy /css via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/css/
+          server-dir: ./postcart.app_www/css/
+          dangerous-clean-slate: true
