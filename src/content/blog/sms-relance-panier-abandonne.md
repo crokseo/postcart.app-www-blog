@@ -4,7 +4,7 @@ description: "SMS abandon cart Shopify : 30-35% d'ouverture, 8-10% de clic — m
 date: 2026-04-29
 category: "Canaux de relance"
 categorySlug: "canaux-de-relance"
-image: "/images/sms-relance-panier-abandonne-hero.svg"
+image: "/images/sms-relance-panier-abandonne-hero.jpg"
 readingTime: "8 min de lecture"
 # ──────────────────────────────────────────────────
 # SEO METADATA — référence interne (hors schéma Astro)

@@ -54,6 +54,16 @@ jobs:
           server-dir: ./postcart.app_www/css/
           dangerous-clean-slate: true
 
+      - name: Deploy /images via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/images/
+          server-dir: ./postcart.app_www/images/
+          dangerous-clean-slate: false
+
       - name: Deploy sitemap via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:

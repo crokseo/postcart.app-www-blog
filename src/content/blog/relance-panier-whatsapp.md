@@ -4,7 +4,7 @@ description: "WhatsApp abandon cart Shopify : 98% d'ouverture, API coûteuse, op
 date: 2026-04-29
 category: "Canaux de relance"
 categorySlug: "canaux-de-relance"
-image: "/images/relance-panier-whatsapp-hero.svg"
+image: "/images/relance-panier-whatsapp-hero.jpg"
 readingTime: "6 min de lecture"
 # ──────────────────────────────────────────────────
 # SEO METADATA — référence interne (hors schéma Astro)

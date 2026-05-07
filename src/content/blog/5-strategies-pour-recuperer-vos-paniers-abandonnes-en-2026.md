@@ -4,6 +4,7 @@ description: "En moyenne, 70% des paniers sont abandonnés avant la finalisation
 date: 2026-03-12
 category: "Stratégie"
 categorySlug: "strategie"
+image: "/images/5-strategies-panier-abandonne-hero.jpg"
 readingTime: "5 min de lecture"
 ---
 
