@@ -24,57 +24,43 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy /blog via SCP
-        uses: appleboy/scp-action@v0.1.7
+      - name: Deploy /blog via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: ./dist/blog/.
-          target: ~/postcart.app_www/blog/
-          strip_components: 0
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/blog/
+          server-dir: ./postcart.app_www/blog/
+          dangerous-clean-slate: true
 
-      - name: Deploy /category via SCP
-        uses: appleboy/scp-action@v0.1.7
+      - name: Deploy /category via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: ./dist/category/.
-          target: ~/postcart.app_www/category/
-          strip_components: 0
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/category/
+          server-dir: ./postcart.app_www/category/
+          dangerous-clean-slate: true
 
-      - name: Deploy /css via SCP
-        uses: appleboy/scp-action@v0.1.7
+      - name: Deploy /css via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: ./dist/css/.
-          target: ~/postcart.app_www/css/
-          strip_components: 0
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/css/
+          server-dir: ./postcart.app_www/css/
+          dangerous-clean-slate: true
 
-      - name: Deploy sitemap via SCP
-        uses: appleboy/scp-action@v0.1.7
+      - name: Deploy sitemap via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: ./dist/sitemap*.xml
-          target: ~/postcart.app_www/
-          strip_components: 2
-
-      - name: Fix permissions
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            find ~/postcart.app_www/blog/ -type d -exec chmod 755 {} \;
-            find ~/postcart.app_www/blog/ -type f -exec chmod 644 {} \;
-            find ~/postcart.app_www/category/ -type d -exec chmod 755 {} \;
-            find ~/postcart.app_www/category/ -type f -exec chmod 644 {} \;
-            find ~/postcart.app_www/css/ -type d -exec chmod 755 {} \;
-            find ~/postcart.app_www/css/ -type f -exec chmod 644 {} \;
-            chmod 644 ~/postcart.app_www/sitemap*.xml 2>/dev/null || true
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ./postcart.app_www/
+          include: sitemap*.xml
+          dangerous-clean-slate: false
