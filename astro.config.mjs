@@ -5,5 +5,7 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://postcart.app',
   output: 'static',
-  integrations: [sitemap()],
+  integrations: [sitemap({
+    customPages: ['https://postcart.app/'],
+  })],
 });
