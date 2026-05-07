@@ -24,42 +24,46 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy /blog via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy /blog via SCP
+        uses: appleboy/scp-action@v0.1.7
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/blog/
-          server-dir: ./postcart.app_www/blog/
-          dangerous-clean-slate: true
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: ./dist/blog/.
+          target: ~/postcart.app_www/blog/
+          strip_components: 0
 
-      - name: Deploy /category via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy /category via SCP
+        uses: appleboy/scp-action@v0.1.7
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/category/
-          server-dir: ./postcart.app_www/category/
-          dangerous-clean-slate: true
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: ./dist/category/.
+          target: ~/postcart.app_www/category/
+          strip_components: 0
 
-      - name: Deploy /_astro assets via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy /css via SCP
+        uses: appleboy/scp-action@v0.1.7
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/_astro/
-          server-dir: ./postcart.app_www/_astro/
-          dangerous-clean-slate: true
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: ./dist/css/.
+          target: ~/postcart.app_www/css/
+          strip_components: 0
 
-      - name: Deploy /css via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Fix permissions
+        uses: appleboy/ssh-action@v1.0.3
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/css/
-          server-dir: ./postcart.app_www/css/
-          dangerous-clean-slate: true
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            find ~/postcart.app_www/blog/ -type d -exec chmod 755 {} \;
+            find ~/postcart.app_www/blog/ -type f -exec chmod 644 {} \;
+            find ~/postcart.app_www/category/ -type d -exec chmod 755 {} \;
+            find ~/postcart.app_www/category/ -type f -exec chmod 644 {} \;
+            find ~/postcart.app_www/css/ -type d -exec chmod 755 {} \;
+            find ~/postcart.app_www/css/ -type f -exec chmod 644 {} \;
