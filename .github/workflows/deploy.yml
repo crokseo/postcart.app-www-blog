@@ -54,6 +54,16 @@ jobs:
           target: ~/postcart.app_www/css/
           strip_components: 0
 
+      - name: Deploy sitemap via SCP
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: ./dist/sitemap*.xml
+          target: ~/postcart.app_www/
+          strip_components: 2
+
       - name: Fix permissions
         uses: appleboy/ssh-action@v1.0.3
         with:
@@ -67,3 +77,4 @@ jobs:
             find ~/postcart.app_www/category/ -type f -exec chmod 644 {} \;
             find ~/postcart.app_www/css/ -type d -exec chmod 755 {} \;
             find ~/postcart.app_www/css/ -type f -exec chmod 644 {} \;
+            chmod 644 ~/postcart.app_www/sitemap*.xml 2>/dev/null || true
