@@ -64,6 +64,7 @@ img { max-width: 100%; height: auto; }
     height: 80px;
     width: auto;
     object-fit: contain;
+    mix-blend-mode: multiply;
 }
 .pc-nav-links { display: none; gap: 2rem; align-items: center; }
 @media (min-width: 768px) { .pc-nav-links { display: flex; } }
