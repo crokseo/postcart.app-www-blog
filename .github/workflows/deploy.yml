@@ -64,7 +64,7 @@ jobs:
           server-dir: ./postcart.app_www/images/
           dangerous-clean-slate: false
 
-      - name: Deploy sitemap via FTP
+      - name: Deploy sitemap + robots via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_HOST }}
@@ -72,5 +72,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: ./postcart.app_www/
-          include: sitemap*.xml
+          include: |
+            sitemap*.xml
+            robots.txt
           dangerous-clean-slate: false

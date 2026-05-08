@@ -3,9 +3,9 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://postcart.app',
+  site: 'https://www.postcart.app',
   output: 'static',
   integrations: [sitemap({
-    customPages: ['https://postcart.app/'],
+    customPages: ['https://www.postcart.app/'],
   })],
 });
