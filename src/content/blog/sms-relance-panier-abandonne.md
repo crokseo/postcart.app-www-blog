@@ -1,4 +1,4 @@
----
+﻿---
 title: "SMS relance panier abandonné : atouts, limites et alternatives pour Shopify"
 description: "SMS abandon cart Shopify : 30-35% d'ouverture, 8-10% de clic — mais consentement obligatoire, coût élevé, risque intrusif. Ce que les données révèlent vraiment."
 date: 2026-04-29
@@ -97,17 +97,7 @@ readingTime: "8 min de lecture"
   </tbody>
 </table>
 
-<div class="pc-cta-block pc-cta-block--app">
-  <div class="pc-cta-block__eyebrow">Shopify · Installation gratuite</div>
-  <p class="pc-cta-block__title">Pour les paniers que le SMS n'atteint pas et les marques premium.</p>
-  <p class="pc-cta-block__sub">PostCart envoie une carte postale physique qui reste visible 17 jours — là où le SMS est lu en 3 minutes ou jamais. Sans opt-in, sans risque RGPD, sans taux d'opt-out.</p>
-  <a href="#" class="pc-cta-btn pc-cta-btn--orange">Découvrir PostCart pour Shopify →</a>
-  <div class="pc-cta-trust">
-    <span class="pc-cta-trust-item">15 cartes offertes pour tester</span>
-    <span class="pc-cta-trust-item">Installation gratuite</span>
-    <span class="pc-cta-trust-item">Compatible toutes boutiques Shopify</span>
-  </div>
-</div>
+
 
 <h2>Les trois contraintes que personne ne mentionne vraiment</h2>
 
@@ -162,17 +152,7 @@ readingTime: "8 min de lecture"
 
 <p>Pour ces segments, la <a href="/blog/carte-postale-relance-panier-abandonne">carte postale de relance panier abandonné</a> s'impose comme l'alternative la plus cohérente avec le positionnement de marque.</p>
 
-<div class="pc-cta-block pc-cta-block--sim">
-  <div class="pc-cta-block__eyebrow">Outil gratuit</div>
-  <p class="pc-cta-block__title">Calculez ce que vos 40–60 % de paniers sans opt-in SMS vous coûtent.</p>
-  <p class="pc-cta-block__sub">Le simulateur quantifie le manque à gagner total de votre boutique — y compris les segments que le SMS ne peut légalement pas relancer.</p>
-  <a href="/simulateur/" class="pc-cta-btn pc-cta-btn--blue">Calculer mon manque à gagner →</a>
-  <div class="pc-cta-trust">
-    <span class="pc-cta-trust-item">Gratuit</span>
-    <span class="pc-cta-trust-item">Sans inscription</span>
-    <span class="pc-cta-trust-item">Résultat en 30 secondes</span>
-  </div>
-</div>
+
 
 <h2>Comment configurer un SMS de relance panier abandonné sur Shopify</h2>
 
@@ -294,15 +274,4 @@ readingTime: "8 min de lecture"
   <p style="margin:0 0 8px 0;font-weight:700;color:#065f46;">Pour les segments sans opt-in SMS ou pour les marques premium</p>
   <p style="margin:0 0 16px 0;color:#064e3b;">Testez postcart gratuitement — <strong>15 cartes postales offertes</strong> pour relancer vos paniers abandonnés sans consentement digital, sans risque RGPD, et avec un dwell time de 17 jours.</p>
   <a href="https://www.postcart.app" style="display:inline-block;background-color:#10b981;color:#ffffff;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:600;">Tester postcart gratuitement →</a>
-</div>
-
-<div class="pc-cta-block pc-cta-block--final">
-  <p class="pc-cta-block__title">Récupérez vos paniers abandonnés avec un canal à 90 % d'ouverture.</p>
-  <p class="pc-cta-block__sub">Envoyez vos 15 premières cartes postales gratuitement. Sans engagement, sans carte bancaire.</p>
-  <a href="#" class="pc-cta-btn pc-cta-btn--orange">Accéder à l'application →</a>
-  <div class="pc-cta-trust">
-    <span class="pc-cta-trust-item">Sans engagement</span>
-    <span class="pc-cta-trust-item">Support français</span>
-    <span class="pc-cta-trust-item">ROI mesurable dès la première campagne</span>
-  </div>
 </div>

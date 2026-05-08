@@ -1,4 +1,4 @@
----
+﻿---
 title: "Pourquoi votre panier est abandonné : les 7 vraies raisons (et ce qu'elles vous coûtent)"
 description: "70% des paniers e-commerce ne sont jamais achetés. Découvrez les 7 vraies causes de l'abandon de panier et ce que chacune vous coûte concrètement."
 date: 2026-04-29
@@ -40,17 +40,7 @@ La solution existe depuis des années : le *guest checkout*, ou achat sans compt
 
 Une nuance, tout de même : certains secteurs (abonnements, produits personnalisés) ont des raisons légitimes d'exiger un compte. Dans ces cas, proposez la création *après* la commande, pas avant.
 
-<div class="pc-cta-block pc-cta-block--sim">
-  <div class="pc-cta-block__eyebrow">Outil gratuit</div>
-  <p class="pc-cta-block__title">Calculez ce que ces abandons vous coûtent chaque mois.</p>
-  <p class="pc-cta-block__sub">Frais de port, compte obligatoire, tunnel trop long — chaque raison représente une perte réelle. Le simulateur la quantifie en euros pour votre boutique.</p>
-  <a href="/simulateur/" class="pc-cta-btn pc-cta-btn--blue">Calculer mon manque à gagner →</a>
-  <div class="pc-cta-trust">
-    <span class="pc-cta-trust-item">Gratuit</span>
-    <span class="pc-cta-trust-item">Sans inscription</span>
-    <span class="pc-cta-trust-item">Résultat en 30 secondes</span>
-  </div>
-</div>
+
 
 ## 3. Votre site inspire-t-il confiance ? Le doute suffit à faire partir
 
@@ -108,17 +98,7 @@ L'intégration technique est aujourd'hui simple sur Shopify. Le vrai frein est s
 
 ---
 
-<div class="pc-cta-block pc-cta-block--app">
-  <div class="pc-cta-block__eyebrow">Shopify · Installation gratuite</div>
-  <p class="pc-cta-block__title">Pour les paniers abandonnés que l'email ne récupère pas.</p>
-  <p class="pc-cta-block__sub">Distraction, lèche-vitrine, phase de comparaison — certains clients reviendront 3, 5 ou 10 jours plus tard. PostCart les atteint dans leur boîte aux lettres, là où l'email échoue.</p>
-  <a href="#" class="pc-cta-btn pc-cta-btn--orange">Découvrir PostCart pour Shopify →</a>
-  <div class="pc-cta-trust">
-    <span class="pc-cta-trust-item">15 cartes offertes pour tester</span>
-    <span class="pc-cta-trust-item">Installation gratuite</span>
-    <span class="pc-cta-trust-item">Compatible toutes boutiques Shopify</span>
-  </div>
-</div>
+
 
 ## Ce que les chiffres ne disent pas
 
@@ -131,14 +111,3 @@ La distinction entre abandon de panier et abandon de checkout — que le Baymard
 Poser ce diagnostic sur votre boutique est la première étape. La deuxième : décider dans quel délai vous voulez récupérer ces ventes.
 
 <p style="margin-top: 2em; padding: 1.5em; background: #f0f4ff; border-left: 4px solid #6366f1; border-radius: 4px;"><strong>postcart.app</strong> automatise l'envoi de cartes postales physiques personnalisées vers vos clients qui ont abandonné leur panier Shopify — sans action manuelle de votre part. Une approche différente, pour les marques qui veulent sortir de l'email.</p>
-
-<div class="pc-cta-block pc-cta-block--final">
-  <p class="pc-cta-block__title">Récupérez vos paniers abandonnés avec un canal à 90 % d'ouverture.</p>
-  <p class="pc-cta-block__sub">Envoyez vos 15 premières cartes postales gratuitement. Sans engagement, sans carte bancaire.</p>
-  <a href="#" class="pc-cta-btn pc-cta-btn--orange">Accéder à l'application →</a>
-  <div class="pc-cta-trust">
-    <span class="pc-cta-trust-item">Sans engagement</span>
-    <span class="pc-cta-trust-item">Support français</span>
-    <span class="pc-cta-trust-item">ROI mesurable dès la première campagne</span>
-  </div>
-</div>
