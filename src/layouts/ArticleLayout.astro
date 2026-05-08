@@ -26,6 +26,101 @@ const {
   prev,
   next,
 } = Astro.props;
+
+// ── Logique de sélection des CTAs outils ──────────────────────────────────
+
+// Durée de lecture → article long si ≥ 6 min
+const readingMinutes = readingTime ? parseInt(readingTime) : 5;
+const isLongArticle = readingMinutes >= 6;
+
+// Pool complet des CTAs outils disponibles
+const toolPool = [
+  {
+    id: 'simulator-loss',
+    categories: ['donnees-benchmarks', 'comprendre-le-probleme', 'strategie'],
+    eyebrow: 'Outil gratuit',
+    title: 'Calculez combien vous coûtent vos paniers abandonnés chaque mois.',
+    sub: 'Entrez votre CA mensuel et votre taux d\'abandon : le simulateur calcule en 30 secondes votre manque à gagner réel.',
+    href: '/simulateur/',
+    btnLabel: 'Calculer mon manque à gagner →',
+    btnClass: 'pc-cta-btn--blue',
+    blockClass: 'pc-cta-block--sim',
+    trust: ['Gratuit', 'Sans inscription', 'Résultat immédiat'],
+  },
+  {
+    id: 'simulator-roi',
+    categories: ['canaux-de-relance', 'strategie', 'preuves-roi'],
+    eyebrow: 'Simulateur ROI',
+    title: 'Estimez le retour sur investissement d\'une campagne carte postale PostCart.',
+    sub: 'Panier moyen, volume d\'abandons, taux de récupération estimé : obtenez 3 scénarios chiffrés pour votre boutique.',
+    href: '/simulateur/',
+    btnLabel: 'Simuler mon ROI →',
+    btnClass: 'pc-cta-btn--blue',
+    blockClass: 'pc-cta-block--sim',
+    trust: ['Calcul personnalisé', 'Sans inscription', '3 scénarios ROI'],
+  },
+  {
+    id: 'quiz',
+    categories: ['strategie', 'canaux-de-relance', 'comprendre-le-probleme'],
+    eyebrow: 'Quiz — 2 minutes',
+    title: 'Quel type de relanceur de panier êtes-vous ?',
+    sub: '6 questions pour identifier votre profil et recevoir une recommandation de canal de relance adaptée à votre boutique.',
+    href: '/outils/quiz-quel-type-de-relanceur/',
+    btnLabel: 'Faire le quiz →',
+    btnClass: 'pc-cta-btn--blue',
+    blockClass: 'pc-cta-block--sim',
+    trust: ['Résultat immédiat', 'Sans inscription', 'Recommandation personnalisée'],
+    comingSoon: true, // Remplacer par false quand la page est en ligne
+  },
+  {
+    id: 'guide',
+    categories: ['comprendre-le-probleme', 'donnees-benchmarks'],
+    eyebrow: 'Guide complet',
+    title: 'Maîtrisez la relance de panier abandonné de A à Z.',
+    sub: 'Causes, canaux, séquences, RGPD : tout ce qu\'il faut savoir pour récupérer vos paniers avec un taux d\'ouverture à 91 %.',
+    href: '/blog/relance-panier-abandonne-guide-complet/',
+    btnLabel: 'Lire le guide →',
+    btnClass: 'pc-cta-btn--blue',
+    blockClass: 'pc-cta-block--sim',
+    trust: ['Lecture : 12 min', 'Cas pratiques inclus', 'Mis à jour 2026'],
+    comingSoon: true,
+  },
+];
+
+// Filtrer les CTAs disponibles (exclure comingSoon)
+const availableTools = toolPool.filter(c => !c.comingSoon);
+
+// Sélectionner les CTAs selon la catégorie, sans doublons
+function selectTools(slug: string | undefined, count: number) {
+  // Priorité : CTAs dont la catégorie correspond à l'article
+  const matching = availableTools.filter(c => c.categories.includes(slug ?? ''));
+  const others = availableTools.filter(c => !c.categories.includes(slug ?? ''));
+  const ordered = [...matching, ...others];
+
+  // Dédupliquer et prendre `count` CTAs
+  const seen = new Set<string>();
+  const result = [];
+  for (const cta of ordered) {
+    if (!seen.has(cta.id)) {
+      seen.add(cta.id);
+      result.push(cta);
+      if (result.length >= count) break;
+    }
+  }
+  return result;
+}
+
+const toolCount = isLongArticle ? 2 : 1;
+const selectedTools = selectTools(categorySlug, toolCount);
+
+// CTA final app (toujours présent, toujours en dernier)
+const ctaFinal = {
+  title: 'Récupérez vos paniers abandonnés avec un canal à 91 % d\'ouverture.',
+  sub: 'Envoyez vos 15 premières cartes postales gratuitement. Sans engagement, sans carte bancaire.',
+  href: 'https://www.postcart.app/#install',
+  btnLabel: 'Accéder à l\'application →',
+  trust: ['Sans engagement', 'Support français', 'ROI mesurable dès la première campagne'],
+};
 ---
 <BaseLayout title={`${title} - PostCart`} description={description} ogType="article" ogImage={image}>
   <div class="pc-container">
@@ -63,38 +158,24 @@ const {
     <div class="pc-article-content">
       <slot />
 
-      <div class="pc-cta-block pc-cta-block--app">
-        <div class="pc-cta-block__eyebrow">Shopify · Installation gratuite</div>
-        <p class="pc-cta-block__title">91 % d'ouverture. Zéro filtre spam. Zéro opt-in requis.</p>
-        <p class="pc-cta-block__sub">PostCart connecte votre boutique Shopify à l'impression et l'envoi automatique de cartes postales personnalisées — déclenché à chaque abandon panier, sans action manuelle.</p>
-        <a href="https://www.postcart.app/#install" class="pc-cta-btn pc-cta-btn--orange">Découvrir PostCart pour Shopify →</a>
-        <div class="pc-cta-trust">
-          <span class="pc-cta-trust-item">15 cartes offertes pour tester</span>
-          <span class="pc-cta-trust-item">Installation gratuite</span>
-          <span class="pc-cta-trust-item">Compatible toutes boutiques Shopify</span>
+      {selectedTools.map(cta => (
+        <div class={`pc-cta-block ${cta.blockClass}`}>
+          <div class="pc-cta-block__eyebrow">{cta.eyebrow}</div>
+          <p class="pc-cta-block__title">{cta.title}</p>
+          <p class="pc-cta-block__sub">{cta.sub}</p>
+          <a href={cta.href} class={`pc-cta-btn ${cta.btnClass}`}>{cta.btnLabel}</a>
+          <div class="pc-cta-trust">
+            {cta.trust.map(item => <span class="pc-cta-trust-item">{item}</span>)}
+          </div>
         </div>
-      </div>
-
-      <div class="pc-cta-block pc-cta-block--sim">
-        <div class="pc-cta-block__eyebrow">Outil gratuit</div>
-        <p class="pc-cta-block__title">Estimez le ROAS d'une campagne de cartes postales pour votre boutique.</p>
-        <p class="pc-cta-block__sub">Entrez votre CA mensuel et votre taux d'abandon : le simulateur calcule combien vous pourriez récupérer avec un taux de récupération de 8 %.</p>
-        <a href="/simulateur/" class="pc-cta-btn pc-cta-btn--blue">Calculer mon manque à gagner →</a>
-        <div class="pc-cta-trust">
-          <span class="pc-cta-trust-item">Gratuit</span>
-          <span class="pc-cta-trust-item">Sans inscription</span>
-          <span class="pc-cta-trust-item">Résultat en 30 secondes</span>
-        </div>
-      </div>
+      ))}
 
       <div class="pc-cta-block pc-cta-block--final">
-        <p class="pc-cta-block__title">Récupérez vos paniers abandonnés avec un canal à 90 % d'ouverture.</p>
-        <p class="pc-cta-block__sub">Envoyez vos 15 premières cartes postales gratuitement. Sans engagement, sans carte bancaire.</p>
-        <a href="https://www.postcart.app/#install" class="pc-cta-btn pc-cta-btn--orange">Accéder à l'application →</a>
+        <p class="pc-cta-block__title">{ctaFinal.title}</p>
+        <p class="pc-cta-block__sub">{ctaFinal.sub}</p>
+        <a href={ctaFinal.href} class="pc-cta-btn pc-cta-btn--orange">{ctaFinal.btnLabel}</a>
         <div class="pc-cta-trust">
-          <span class="pc-cta-trust-item">Sans engagement</span>
-          <span class="pc-cta-trust-item">Support français</span>
-          <span class="pc-cta-trust-item">ROI mesurable dès la première campagne</span>
+          {ctaFinal.trust.map(item => <span class="pc-cta-trust-item">{item}</span>)}
         </div>
       </div>
     </div>
