@@ -293,7 +293,7 @@ readingTime: "8 min de lecture"
 <div style="background-color:#f0fdf4;border-left:4px solid #10b981;padding:20px 24px;border-radius:0 8px 8px 0;margin:32px 0;">
   <p style="margin:0 0 8px 0;font-weight:700;color:#065f46;">Pour les segments sans opt-in SMS ou pour les marques premium</p>
   <p style="margin:0 0 16px 0;color:#064e3b;">Testez postcart gratuitement — <strong>15 cartes postales offertes</strong> pour relancer vos paniers abandonnés sans consentement digital, sans risque RGPD, et avec un dwell time de 17 jours.</p>
-  <a href="https://postcart.app" style="display:inline-block;background-color:#10b981;color:#ffffff;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:600;">Tester postcart gratuitement →</a>
+  <a href="https://www.postcart.app" style="display:inline-block;background-color:#10b981;color:#ffffff;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:600;">Tester postcart gratuitement →</a>
 </div>
 
 <div class="pc-cta-block pc-cta-block--final">

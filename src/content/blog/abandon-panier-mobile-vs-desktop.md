@@ -102,7 +102,7 @@ L'email reste le canal de relance dominant — mais il n'est pas toujours le mie
 Envoyer une carte postale personnalisée après un abandon panier, c'est atteindre le client dans un espace où la concurrence digitale est nulle — sa boîte aux lettres. Pas de spam filter, pas de bannière ignorée. Un objet tangible, avec le nom du produit abandonné, une offre simple, et un QR code qui renvoie vers le panier.
 
 <div style="background:#f0f4ff;border-left:4px solid #6366f1;padding:16px 20px;margin:24px 0;border-radius:4px;">
-C'est ce que fait <a href="https://postcart.app" target="_blank" rel="noopener">postcart.app</a> — automatiquement, connecté à Shopify, sans action manuelle. Pour les marchands dont le mobile représente plus de la moitié du trafic, c'est une façon de relancer différemment, là où les autres canaux saturent.
+C'est ce que fait <a href="https://www.postcart.app" target="_blank" rel="noopener">postcart.app</a> — automatiquement, connecté à Shopify, sans action manuelle. Pour les marchands dont le mobile représente plus de la moitié du trafic, c'est une façon de relancer différemment, là où les autres canaux saturent.
 </div>
 
 <div class="pc-cta-block pc-cta-block--sim">

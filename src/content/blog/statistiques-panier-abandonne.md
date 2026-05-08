@@ -191,7 +191,7 @@ La logique est simple. Le premier email touche les acheteurs qui avaient juste b
 
 Email et SMS couvrent la dimension digitale de la relance. Mais il existe un troisième canal avec un taux d'ouverture de **90 %** — non pas parce qu'il est nouveau, mais parce qu'il est physique : la carte postale personnalisée envoyée à J+5 ou J+7 après l'abandon.
 
-Pas d'algorithme iOS qui filtre la livraison. Pas de dossier spam. Pas de désabonnement en un clic. Une carte dans la boîte aux lettres, avec le prénom du client, le produit qu'il a failli acheter, et un code promotionnel. [postcart.app](https://postcart.app) automatise cet envoi depuis Shopify — **15 cartes offertes** pour tester le canal sur votre boutique avant de décider si ça vaut le coup.
+Pas d'algorithme iOS qui filtre la livraison. Pas de dossier spam. Pas de désabonnement en un clic. Une carte dans la boîte aux lettres, avec le prénom du client, le produit qu'il a failli acheter, et un code promotionnel. [postcart.app](https://www.postcart.app) automatise cet envoi depuis Shopify — **15 cartes offertes** pour tester le canal sur votre boutique avant de décider si ça vaut le coup.
 
 Ces chiffres montrent l'ampleur réelle du problème. Ils montrent aussi qu'une part non négligeable des abandons est structurellement hors de portée à court terme — et que les canaux les plus courants, utilisés sans séquence, récupèrent moins de 10 % de ce qui est récupérable. La question qui reste ouverte : quelle combinaison de canaux, dans quel timing, pour quel profil client ? C'est ce que couvre notre [guide complet sur la relance de panier abandonné](/blog/relance-panier-abandonne-guide-complet) — avec des séquences testées sur des boutiques Shopify en 2026.
 

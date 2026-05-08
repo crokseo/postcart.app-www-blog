@@ -128,9 +128,9 @@ La différence est nette. Rappeler à un client qu'il avait construit un panier 
 
 Les marques qui performent sur le long terme sont celles qui utilisent la psychologie pour réduire la friction entre l'intention du client et son achat. Pas celles qui l'exploitent pour forcer des transactions à court terme.
 
-[postcart.app](https://postcart.app) s'inscrit dans cette logique. Une carte postale physique envoyée après un abandon n'est pas une manipulation — c'est un rappel tangible, chaleureux, qui joue sur l'effet de dotation de façon éthique. Le client tient quelque chose dans ses mains. Il revoit ce qu'il avait choisi. Et l'objet physique renforce l'appropriation mentale plus efficacement qu'un énième email dans une boîte déjà pleine.
+[postcart.app](https://www.postcart.app) s'inscrit dans cette logique. Une carte postale physique envoyée après un abandon n'est pas une manipulation — c'est un rappel tangible, chaleureux, qui joue sur l'effet de dotation de façon éthique. Le client tient quelque chose dans ses mains. Il revoit ce qu'il avait choisi. Et l'objet physique renforce l'appropriation mentale plus efficacement qu'un énième email dans une boîte déjà pleine.
 
-[Découvrez comment postcart.app relance vos paniers abandonnés avec des cartes postales physiques →](https://postcart.app)
+[Découvrez comment postcart.app relance vos paniers abandonnés avec des cartes postales physiques →](https://www.postcart.app)
 
 <div class="pc-cta-block pc-cta-block--final">
   <p class="pc-cta-block__title">Récupérez vos paniers abandonnés avec un canal à 90 % d'ouverture.</p>

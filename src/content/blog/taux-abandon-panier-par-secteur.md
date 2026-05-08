@@ -144,7 +144,7 @@ Les chiffres de cet article sont des points de référence — ils donnent une g
 
 Ce qui compte, c'est la trajectoire et le benchmark sectoriel. Si votre taux est 10 points au-dessus de la moyenne de votre vertical, c'est un signal d'investigation UX prioritaire. S'il est dans la norme, l'enjeu se déplace vers la qualité de la relance : combien de ces abandons "normaux" pouvez-vous récupérer avec la bonne séquence, au bon moment, sur le bon canal ?
 
-Pour les secteurs à panier moyen élevé — luxe, outdoor, high-tech haut de gamme — le ROI d'une relance par [carte postale physique postcart](https://postcart.app) est particulièrement documenté : là où l'email se noie dans une boîte de réception chargée, un courrier personnalisé qui arrive dans la boîte aux lettres 48 à 72 heures après l'abandon crée une présence mémorielle que le digital ne peut pas reproduire.
+Pour les secteurs à panier moyen élevé — luxe, outdoor, high-tech haut de gamme — le ROI d'une relance par [carte postale physique postcart](https://www.postcart.app) est particulièrement documenté : là où l'email se noie dans une boîte de réception chargée, un courrier personnalisé qui arrive dans la boîte aux lettres 48 à 72 heures après l'abandon crée une présence mémorielle que le digital ne peut pas reproduire.
 
 Les données sectorielles existent. La vraie question est de savoir si vous les utilisez pour calibrer votre stratégie — ou si vous vous laissez guider par une moyenne générale qui ne parle pas de votre réalité.
 

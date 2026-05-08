@@ -149,7 +149,7 @@ Les emails de relance sont saturés. Les taux d'ouverture moyen des relances pan
 
 La carte postale physique fonctionne sur un registre différent : elle passe dans la boîte aux lettres, elle est touchée, elle reste visible plusieurs jours. Son taux de mémorisation dépasse largement celui des canaux digitaux. C'est précisément pour ça que postcart.app automatise l'envoi de cartes postales personnalisées pour les paniers Shopify abandonnés — avec un déclenchement automatique, sans intervention manuelle.
 
-Si vous n'avez pas encore mis en place de relance pour vos paniers abandonnés, c'est probablement la décision à rendement le plus rapide que vous pouvez prendre aujourd'hui. [Essayez postcart gratuitement](https://postcart.app) et voyez combien de paniers votre boutique récupère dans les 30 premiers jours.
+Si vous n'avez pas encore mis en place de relance pour vos paniers abandonnés, c'est probablement la décision à rendement le plus rapide que vous pouvez prendre aujourd'hui. [Essayez postcart gratuitement](https://www.postcart.app) et voyez combien de paniers votre boutique récupère dans les 30 premiers jours.
 
 <div class="pc-cta-block pc-cta-block--final">
   <p class="pc-cta-block__title">Récupérez vos paniers abandonnés avec un canal à 90 % d'ouverture.</p>

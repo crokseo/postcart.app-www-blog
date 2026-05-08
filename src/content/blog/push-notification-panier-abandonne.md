@@ -194,7 +194,7 @@ readingTime: "6 min de lecture"
 <div style="background:#0f172a;border:1px solid #06b6d4;border-radius:12px;padding:24px 28px;margin-top:32px;">
   <p style="margin:0 0 8px 0;font-weight:700;font-size:1.05em;color:#f8fafc;">Pour les visiteurs qui n'ont pas activé vos push, testez postcart gratuitement — 15 cartes offertes.</p>
   <p style="margin:0 0 16px 0;color:#94a3b8;">Une carte postale physique, sans consentement digital requis, avec 91 % d'ouverture garantie. Aucun opt-in, aucune désactivation possible.</p>
-  <a href="https://postcart.app" style="display:inline-block;background:#06b6d4;color:#0f172a;font-weight:700;padding:12px 24px;border-radius:8px;text-decoration:none;">Commencer gratuitement →</a>
+  <a href="https://www.postcart.app" style="display:inline-block;background:#06b6d4;color:#0f172a;font-weight:700;padding:12px 24px;border-radius:8px;text-decoration:none;">Commencer gratuitement →</a>
 </div>
 
 <div class="pc-cta-block pc-cta-block--final">
