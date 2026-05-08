@@ -78,6 +78,16 @@ jobs:
             index.html
           dangerous-clean-slate: false
 
+      - name: Deploy /outils via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/outils/
+          server-dir: ./postcart.app_www/outils/
+          dangerous-clean-slate: true
+
       - name: Deploy wp-content (home.css) via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
