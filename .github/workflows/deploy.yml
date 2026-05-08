@@ -64,7 +64,7 @@ jobs:
           server-dir: ./postcart.app_www/images/
           dangerous-clean-slate: false
 
-      - name: Deploy sitemap + robots via FTP
+      - name: Deploy sitemap + robots + homepage via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_HOST }}
@@ -75,4 +75,15 @@ jobs:
           include: |
             sitemap*.xml
             robots.txt
+            index.html
+          dangerous-clean-slate: false
+
+      - name: Deploy wp-content (home.css) via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/wp-content/
+          server-dir: ./postcart.app_www/wp-content/
           dangerous-clean-slate: false
