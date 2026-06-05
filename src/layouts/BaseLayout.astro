@@ -35,6 +35,10 @@ const canonical = `${siteUrl}${Astro.url.pathname}`;
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title} />
   {description && <meta name="twitter:description" content={description} />}
+  <style>
+    .pc-nav { background: #fff; backdrop-filter: none; -webkit-backdrop-filter: none; }
+    .pc-logo img { mix-blend-mode: multiply; }
+  </style>
 </head>
 <body>
   <div class="pc-rails" aria-hidden="true"></div>
@@ -42,7 +46,7 @@ const canonical = `${siteUrl}${Astro.url.pathname}`;
   <nav class="pc-nav">
     <div class="pc-nav-inner">
       <a href="https://www.postcart.app/" class="pc-logo">
-        <img src="https://postcart.app/wp-content/themes/postcart-v2/assets/logo.png" alt="PostCart.app" height="80" style="mix-blend-mode: multiply;" />
+        <img src="https://postcart.app/wp-content/themes/postcart-v2/assets/logo.png" alt="PostCart.app" height="80" />
       </a>
       <div class="pc-nav-links">
         <a href="https://www.postcart.app/">Accueil</a>
