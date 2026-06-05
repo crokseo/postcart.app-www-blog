@@ -2,12 +2,12 @@
 interface Props {
   title: string;
   description?: string;
-  ogType?: 'website' | 'article';
+  ogType?: "website" | "article";
   ogImage?: string;
 }
 
-const { title, description = '', ogType = 'website', ogImage } = Astro.props;
-const siteUrl = 'https://www.postcart.app';
+const { title, description = "", ogType = "website", ogImage } = Astro.props;
+const siteUrl = "https://www.postcart.app";
 const canonical = `${siteUrl}${Astro.url.pathname}`;
 ---
 <!DOCTYPE html>
@@ -42,7 +42,7 @@ const canonical = `${siteUrl}${Astro.url.pathname}`;
   <nav class="pc-nav">
     <div class="pc-nav-inner">
       <a href="https://www.postcart.app/" class="pc-logo">
-        <img src="https://postcart.app/wp-content/themes/postcart-v2/assets/logo.png" alt="PostCart.app" height="80" />
+        <img src="https://postcart.app/wp-content/themes/postcart-v2/assets/logo.png" alt="PostCart.app" height="80" style="mix-blend-mode: multiply;" />
       </a>
       <div class="pc-nav-links">
         <a href="https://www.postcart.app/">Accueil</a>
